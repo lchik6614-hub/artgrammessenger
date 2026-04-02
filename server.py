@@ -1,6 +1,858 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
+ARTgram Server v3.0 (PostgreSQL + Render-Ready)
+✅ Данные хранятся в облачной БД и НЕ ПРОПАДАЮТ при перезагрузке
+✅ Полная совместимость с твоим index.html (API контракт сохранён)
+"""
+
+from flask import Flask, request, jsonify, send_from_directory
+from flask_cors import CORS
+import os
+import logging
+import threading
+import time
+import random
+import json
+from datetime import datetime
+from contextlib import contextmanager
+import psycopg2
+from psycopg2.extras import RealDictCursor
+
+# === КОНФИГУРАЦИЯ ===
+DATABASE_URL = os.environ.get("DATABASE_URL")
+if not DATABASE_URL:
+    raise ValueError("❌ Переменная DATABASE_URL не задана! Укажи её в Render Environment Variables")
+
+app = Flask(__name__, static_folder='.', static_url_path='')
+CORS(app)
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s', handlers=[logging.StreamHandler()])
+logger = logging.getLogger(__name__)
+
+PREMIUM_USERS = ['artem', 'chap1a', 'kaktak', 'fiman', 'h', "support", "artgrambank", "LEVCHIK"]
+ADMINS = ['artem', 'admin']
+CROWN_LIMIT, BALLOON_LIMIT, PLANET_LIMIT = 25, 20, 15
+BACKUP_INTERVAL_MINUTES = 30
+
+# NFT конфиги (оставлены без изменений)
+NFT_MODEL_CROWN = {'id': 'crown', 'name': 'Корона', 'value': 500, 'rarity': 'legendary', 'icon': '👑'}
+NFT_BACKGROUNDS_CROWN = [
+    {'id': 'bg_1', 'name': 'Рассвет', 'color': 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)'},
+    {'id': 'bg_2', 'name': 'Океан', 'color': 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)'},
+    {'id': 'bg_3', 'name': 'Лес', 'color': 'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)'},
+    {'id': 'bg_4', 'name': 'Космос', 'color': 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'},
+    {'id': 'bg_5', 'name': 'Огонь', 'color': 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)'}
+]
+NFT_PATTERNS_CROWN = [
+    {'id': 'pattern_1', 'name': 'Галочка', 'symbol': '✓', 'class': 'pattern-checkmark'},
+    {'id': 'pattern_2', 'name': 'Буква A', 'symbol': 'A', 'class': 'pattern-letter-a'},
+    {'id': 'pattern_3', 'name': 'Птица', 'symbol': '🕊', 'class': 'pattern-bird'},
+    {'id': 'pattern_4', 'name': 'Кисточка', 'symbol': '🎨', 'class': 'pattern-brush'},
+    {'id': 'pattern_5', 'name': 'Круг', 'symbol': '●', 'class': 'pattern-circle'}
+]
+
+NFT_MODEL_BALLOON = {'id': 'balloon', 'name': 'Шар', 'value': 1000, 'rarity': 'legendary', 'icon': '🎈'}
+NFT_BACKGROUNDS_BALLOON = [
+    {'id': 'balloon_bg_1', 'name': 'Закат', 'color': 'linear-gradient(135deg, #ff9a56 0%, #ffc470 100%)', 'rarity': 'common'},
+    {'id': 'balloon_bg_2', 'name': 'Мята', 'color': 'linear-gradient(135deg, #56ccf2 0%, #7ef9d4 100%)', 'rarity': 'rare'},
+    {'id': 'balloon_bg_3', 'name': 'Радуга', 'color': 'linear-gradient(135deg, #ff00cc 0%, #3333ff 25%, #00ccff 50%, #33ff99 75%, #ffcc00 100%)', 'rarity': 'mythic'}
+]
+NFT_PATTERNS_BALLOON = [
+    {'id': 'balloon_pattern_1', 'name': 'Звёзды', 'symbol': '✦', 'class': 'pattern-stars'},
+    {'id': 'balloon_pattern_2', 'name': 'Волны', 'symbol': '〰', 'class': 'pattern-waves'},
+    {'id': 'balloon_pattern_3', 'name': 'Искры', 'symbol': '✧', 'class': 'pattern-sparkles'}
+]
+
+NFT_MODEL_PLANET = {'id': 'planet', 'name': 'Планета', 'value': 2500, 'rarity': 'ultra-legendary', 'icon': '🪐'}
+NFT_BACKGROUNDS_PLANET = [
+    {'id': 'planet_bg_1', 'name': 'Ледяной океан', 'color': 'linear-gradient(135deg, #4facfe 0%, #00a8ff 50%, #00d2ff 100%)', 'rarity': 'common'},
+    {'id': 'planet_bg_2', 'name': 'Огненная буря', 'color': 'linear-gradient(135deg, #ff416c 0%, #ff4b2b 50%, #ffb347 100%)', 'rarity': 'rare'},
+    {'id': 'planet_bg_3', 'name': 'Космическая аура', 'color': 'linear-gradient(135deg, #667eea 0%, #b721ff 25%, #764ba2 50%, #4facfe 75%, #00f2fe 100%)', 'rarity': 'ultra-rare', 'animated': True}
+]
+NFT_PATTERNS_PLANET = [
+    {'id': 'planet_pattern_1', 'name': 'Кольца', 'symbol': '◌', 'class': 'pattern-rings'},
+    {'id': 'planet_pattern_2', 'name': 'Орбита', 'symbol': '◎', 'class': 'pattern-orbit'},
+    {'id': 'planet_pattern_3', 'name': 'Туманность', 'symbol': '✦✧', 'class': 'pattern-nebula'}
+]
+
+# Кэш
+_contacts_cache = {}
+_cache_timestamp = {}
+CACHE_TTL = 30
+
+# === БД ===
+@contextmanager
+def get_db():
+    conn = psycopg2.connect(DATABASE_URL)
+    try:
+        yield conn
+        conn.commit()
+    except Exception as e:
+        conn.rollback()
+        raise
+    finally:
+        conn.close()
+
+def init_db():
+    """Создание схемы БД при старте"""
+    with get_db() as conn:
+        with conn.cursor() as cur:
+            cur.execute("""
+                CREATE TABLE IF NOT EXISTS users (
+                    username TEXT PRIMARY KEY, email TEXT, password TEXT, bio TEXT, avatar TEXT, status TEXT,
+                    premium BOOLEAN DEFAULT FALSE, verified BOOLEAN DEFAULT FALSE, premium_until TEXT,
+                    payment_pending BOOLEAN DEFAULT FALSE, created_at TEXT, show_gifts BOOLEAN DEFAULT TRUE,
+                    gifts JSONB DEFAULT '[]'::jsonb, nfts JSONB DEFAULT '[]'::jsonb
+                );
+                CREATE TABLE IF NOT EXISTS balances (
+                    username TEXT PRIMARY KEY, balance INTEGER DEFAULT 0
+                );
+                CREATE TABLE IF NOT EXISTS chats (
+                    id TEXT PRIMARY KEY, name TEXT, type TEXT, owner TEXT,
+                    participants JSONB DEFAULT '[]'::jsonb, avatar TEXT, description TEXT,
+                    verified BOOLEAN DEFAULT FALSE, created_at TEXT
+                );
+                CREATE TABLE IF NOT EXISTS messages (
+                    id TEXT PRIMARY KEY, chat_id TEXT, "from" TEXT, text TEXT, type TEXT,
+                    data TEXT, filename TEXT, duration TEXT, nft_id INTEGER,
+                    time TEXT, timestamp TEXT, reactions JSONB DEFAULT '[]'::jsonb
+                );
+                CREATE TABLE IF NOT EXISTS contacts (
+                    username TEXT REFERENCES users(username), contact TEXT,
+                    PRIMARY KEY(username, contact)
+                );
+                CREATE TABLE IF NOT EXISTS blocked (
+                    username TEXT REFERENCES users(username), blocked_user TEXT,
+                    PRIMARY KEY(username, blocked_user)
+                );
+                CREATE TABLE IF NOT EXISTS nft_registry (
+                    id SERIAL PRIMARY KEY, owner TEXT, gift_id TEXT,
+                    model JSONB, background JSONB, pattern JSONB,
+                    activated_at TEXT, rarity_scores JSONB, transfer_history JSONB DEFAULT '[]'::jsonb
+                );
+                CREATE TABLE IF NOT EXISTS limits (
+                    key TEXT PRIMARY KEY, count INTEGER DEFAULT 0
+                );
+                CREATE TABLE IF NOT EXISTS purchases (
+                    id SERIAL PRIMARY KEY, username TEXT, type TEXT, amount INTEGER, price INTEGER,
+                    status TEXT DEFAULT 'pending', created_at TEXT
+                );
+                INSERT INTO limits (key, count) VALUES 
+                    ('crowns', 0), ('balloons', 0), ('planets', 0)
+                ON CONFLICT (key) DO NOTHING;
+                
+                CREATE INDEX IF NOT EXISTS idx_chats_owner ON chats(owner);
+                CREATE INDEX IF NOT EXISTS idx_msg_chat ON messages(chat_id);
+                CREATE INDEX IF NOT EXISTS idx_contacts_user ON contacts(username);
+                CREATE INDEX IF NOT EXISTS idx_nft_owner ON nft_registry(owner);
+            """)
+            logger.info("✅ Схема БД инициализирована")
+
+# === ХЕЛПЕРЫ ===
+def check_premium(username): return username.lower() in [u.lower() for u in PREMIUM_USERS]
+
+def get_balance(username):
+    with get_db() as conn:
+        with conn.cursor() as cur:
+            cur.execute("SELECT balance FROM balances WHERE username=%s", (username,))
+            r = cur.fetchone()
+            if r: return r[0]
+            init = 1000 if username=='artem' else 500 if username=='admin' else 0
+            cur.execute("INSERT INTO balances VALUES (%s, %s)", (username, init))
+            return init
+
+def update_balance(username, delta):
+    with get_db() as conn:
+        with conn.cursor() as cur:
+            cur.execute("""
+                INSERT INTO balances(username, balance) VALUES(%s, %s) 
+                ON CONFLICT(username) DO UPDATE SET balance = balances.balance + EXCLUDED.balance 
+                RETURNING balance
+            """, (username, delta if delta>0 else 0))
+            return cur.fetchone()[0]
+
+def get_limit(key):
+    with get_db() as conn:
+        with conn.cursor() as cur:
+            cur.execute("SELECT count FROM limits WHERE key=%s", (key,))
+            return cur.fetchone()[0]
+
+def inc_limit(key):
+    with get_db() as conn:
+        with conn.cursor() as cur:
+            cur.execute("UPDATE limits SET count=count+1 WHERE key=%s", (key,))
+
+def is_verified(username):
+    with get_db() as conn:
+        with conn.cursor() as cur:
+            cur.execute("SELECT verified FROM users WHERE username=%s", (username,))
+            r = cur.fetchone()
+            return r[0] if r else False
+
+def invalidate_cache(username=None):
+    if username: _contacts_cache.pop(username, None)
+    else: _contacts_cache.clear()
+
+def get_contacts_cached(username):
+    now = time.time()
+    if username in _contacts_cache and (now - _cache_timestamp.get(username, 0)) < CACHE_TTL:
+        return _contacts_cache[username]
+    contacts = []
+    with get_db() as conn:
+        with conn.cursor(cursor_factory=RealDictCursor) as cur:
+            cur.execute("""
+                SELECT u.* FROM contacts c JOIN users u ON u.username=c.contact WHERE c.username=%s
+            """, (username,))
+            for row in cur.fetchall():
+                contacts.append({
+                    "username": row['username'], "avatar": row['avatar'], "bio": row['bio'] or '',
+                    "status": row['status'] or '', "premium": row['premium'] or check_premium(row['username']),
+                    "verified": row['verified']
+                })
+    _contacts_cache[username] = contacts
+    _cache_timestamp[username] = now
+    return contacts
+
+# === API ===
+@app.route('/')
+def index():
+    return send_from_directory('.', 'index.html')
+
+@app.route('/api/register', methods=['POST'])
+def register():
+    try:
+        data = request.get_json(force=True)
+        if not data: return jsonify({"success": False, "message": "Неверные данные"}), 400
+        username = data.get('username', '').replace('@', '').lower()
+        if not username or len(username)<3: return jsonify({"success": False, "message": "Юзернейм слишком короткий"}), 400
+        
+        with get_db() as conn:
+            with conn.cursor() as cur:
+                cur.execute("SELECT 1 FROM users WHERE username=%s", (username,))
+                if cur.fetchone(): return jsonify({"success": False, "message": "Юзернейм уже занят!"}), 400
+                
+                prem = check_premium(username)
+                ver = is_verified(username)
+                cur.execute("""
+                    INSERT INTO users(username, email, password, bio, avatar, premium, verified, created_at, gifts, nfts)
+                    VALUES(%s,%s,%s,%s,%s,%s,%s,%s, '[]'::jsonb, '[]'::jsonb)
+                """, (username, data.get('email',''), data.get('password',''), data.get('bio',''), 
+                      data.get('avatar'), prem, ver, datetime.now().isoformat()))
+                
+                init = 1000 if username=='artem' else 500 if username=='admin' else 0
+                cur.execute("INSERT INTO balances VALUES(%s, %s)", (username, init))
+        invalidate_cache()
+        logger.info(f"✅ Регистрация: @{username}")
+        return jsonify({"success": True, "message": "Регистрация успешна!"})
+    except Exception as e:
+        logger.error(f"❌ Ошибка регистрации: {e}"); return jsonify({"success": False, "message": "Ошибка сервера"}), 500
+
+@app.route('/api/login', methods=['POST'])
+def login():
+    try:
+        data = request.get_json(force=True)
+        username = data.get('username', '').replace('@', '').lower()
+        password = data.get('password')
+        
+        with get_db() as conn:
+            with conn.cursor(cursor_factory=RealDictCursor) as cur:
+                cur.execute("SELECT * FROM users WHERE username=%s", (username,))
+                user = cur.fetchone()
+                if not user: return jsonify({"success": False, "message": "Пользователь не найден"}), 404
+                if user['password'] != password: return jsonify({"success": False, "message": "Неверный пароль"}), 401
+                
+                d = dict(user)
+                d['balance'] = get_balance(username)
+                d['is_admin'] = username in ADMINS
+                d['premium'] = d['premium'] or check_premium(username)
+                d['verified'] = d['verified']
+                d.pop('password', None)
+                logger.info(f"✅ Вход: @{username}")
+                return jsonify({"success": True, "user": d})
+    except Exception as e:
+        logger.error(f"❌ Ошибка входа: {e}"); return jsonify({"success": False, "message": "Ошибка сервера"}), 500
+
+@app.route('/api/get_balance', methods=['POST'])
+def get_balance_route():
+    try:
+        username = request.get_json(force=True).get('username', '').lower()
+        return jsonify({"success": True, "balance": get_balance(username)})
+    except: return jsonify({"success": False}), 500
+
+@app.route('/api/purchase_rockets', methods=['POST'])
+def purchase_rockets():
+    try:
+        data = request.get_json(force=True)
+        username, package = data.get('username','').lower(), data.get('package')
+        packages = {'50': {'rockets': 50, 'price': 49}, '100': {'rockets': 100, 'price': 89}}
+        if package not in packages: return jsonify({"success": False, "message": "Неверный пакет"}), 400
+        pkg = packages[package]
+        with get_db() as conn:
+            with conn.cursor() as cur:
+                cur.execute("INSERT INTO purchases(username,type,amount,price,status,created_at) VALUES(%s,%s,%s,%s,%s,%s)",
+                            (username, 'rockets', pkg['rockets'], pkg['price'], 'pending', datetime.now().isoformat()))
+        return jsonify({"success": True, "rockets": pkg['rockets'], "price": pkg['price'], 
+                        "payment_phone": "+7 (951) 305-75-61", "payment_bank": "Сбербанк", 
+                        "message": "Укажите юзернейм в комментарии перевода!"})
+    except: return jsonify({"success": False}), 500
+
+@app.route('/api/admin_add_balance', methods=['POST'])
+def admin_add_balance():
+    try:
+        data = request.get_json(force=True)
+        if data.get('admin','').lower() not in ADMINS: return jsonify({"success": False, "message": "Только админ"}), 403
+        new_bal = update_balance(data.get('username','').lower(), data.get('amount', 0))
+        invalidate_cache(data.get('username','').lower())
+        return jsonify({"success": True, "new_balance": new_bal})
+    except: return jsonify({"success": False}), 500
+
+@app.route('/api/admin_toggle_verify', methods=['POST'])
+def admin_toggle_verify():
+    try:
+        data = request.get_json(force=True)
+        if data.get('admin','').lower() != 'artem': return jsonify({"success": False, "message": "Только @artem"}), 403
+        target, action = data.get('target_id','').lower(), data.get('action')
+        val = True if action=='add' else False
+        with get_db() as conn:
+            with conn.cursor() as cur: cur.execute("UPDATE users SET verified=%s WHERE username=%s", (val, target))
+        invalidate_cache()
+        msg = f"@{target} верифицирован!" if action=='add' else f"@{target} снят с верификации"
+        return jsonify({"success": True, "message": msg})
+    except: return jsonify({"success": False}), 500
+
+@app.route('/api/send_gift', methods=['POST'])
+def send_gift():
+    try:
+        data = request.get_json(force=True)
+        sender, receiver, gtype = data.get('sender','').lower(), data.get('receiver','').lower(), data.get('gift_type')
+        prices = {'teddy':50,'heart':50,'cup':100,'crown':500,'balloon':1000,'planet':2500}
+        if gtype not in prices: return jsonify({"success": False, "message": "Неверный подарок"}), 400
+        if gtype=='crown' and get_limit('crowns')>=CROWN_LIMIT: return jsonify({"success": False, "message": "👑 Корона распродана!"}), 400
+        if gtype=='balloon' and get_limit('balloons')>=BALLOON_LIMIT: return jsonify({"success": False, "message": "🎈 Шары распроданы!"}), 400
+        if gtype=='planet' and get_limit('planets')>=PLANET_LIMIT: return jsonify({"success": False, "message": "🪐 Планеты распроданы!"}), 400
+        
+        price = prices[gtype]
+        if get_balance(sender) < price: return jsonify({"success": False, "message": "Недостаточно ракет 🚀"}), 400
+        
+        update_balance(sender, -price)
+        inc_limit(f"{gtype}s")
+        
+        gift = {"id": str(datetime.now().timestamp()), "type": gtype, "from": sender, 
+                "date": datetime.now().isoformat(), "price": price, "rare": gtype in ['crown','balloon','planet'], "nft": None}
+        
+        with get_db() as conn:
+            with conn.cursor() as cur:
+                cur.execute("UPDATE users SET gifts = gifts || %s::jsonb WHERE username=%s", (json.dumps([gift]), receiver))
+        invalidate_cache(receiver)
+        return jsonify({"success": True, "gift": gift, "sender_new_balance": get_balance(sender)})
+    except: return jsonify({"success": False}), 500
+
+@app.route('/api/transfer_nft_gift', methods=['POST'])
+def transfer_nft_gift():
+    try:
+        data = request.get_json(force=True)
+        sender, receiver, gid = data.get('sender','').lower(), data.get('receiver','').lower(), data.get('gift_id')
+        with get_db() as conn:
+            with conn.cursor(cursor_factory=RealDictCursor) as cur:
+                cur.execute("SELECT gifts, nfts FROM users WHERE username IN (%s, %s)", (sender, receiver))
+                rows = {r['username']: dict(r) for r in cur.fetchall()}
+                if sender not in rows or receiver not in rows: return jsonify({"success": False, "message": "Пользователь не найден"}), 404
+                
+                s_gifts = rows[sender]['gifts']
+                idx = next((i for i,g in enumerate(s_gifts) if g['id']==gid), None)
+                if idx is None: return jsonify({"success": False, "message": "Подарок не найден"}), 404
+                gift = s_gifts[idx]
+                if not gift.get('nft'): return jsonify({"success": False, "message": "Это не NFT"}), 400
+                
+                nft = gift['nft']
+                cur.execute("UPDATE nft_registry SET owner=%s, transfer_history=transfer_history || %s::jsonb WHERE id=%s", 
+                            (receiver, json.dumps([{'from':sender,'to':receiver,'date':datetime.now().isoformat()}]), nft['id']))
+                
+                s_gifts.pop(idx)
+                cur.execute("UPDATE users SET gifts=%s, nfts=%s WHERE username=%s", (json.dumps(s_gifts), json.dumps(rows[sender]['nfts']), sender))
+                
+                r_gifts = rows[receiver]['gifts']
+                r_nfts = rows[receiver]['nfts']
+                r_gifts.append(gift)
+                if nft['id'] not in r_nfts: r_nfts.append(nft['id'])
+                cur.execute("UPDATE users SET gifts=%s, nfts=%s WHERE username=%s", (json.dumps(r_gifts), json.dumps(r_nfts), receiver))
+                
+        invalidate_cache()
+        return jsonify({"success": True, "message": f"NFT #{nft['id']} передан @{receiver}", "nft_id": nft['id'], "contacts": get_contacts_cached(sender)})
+    except: return jsonify({"success": False, "message": "Ошибка"}), 500
+
+@app.route('/api/upgrade_nft', methods=['POST'])
+def upgrade_nft():
+    try:
+        data = request.get_json(force=True)
+        username, gid, cost = data.get('username','').lower(), data.get('gift_id'), data.get('upgrade_cost', 250)
+        if get_balance(username) < cost: return jsonify({"success": False, "message": "Недостаточно ракет 🚀"}), 400
+        
+        with get_db() as conn:
+            with conn.cursor(cursor_factory=RealDictCursor) as cur:
+                cur.execute("SELECT gifts FROM users WHERE username=%s", (username,))
+                u = cur.fetchone()
+                gifts = u['gifts']
+                idx = next((i for i,g in enumerate(gifts) if g['id']==gid), None)
+                if idx is None: return jsonify({"success": False, "message": "Подарок не найден"}), 404
+                
+                gift = gifts[idx]
+                if gift['type'] not in ['crown','balloon','planet'] or gift.get('nft'): return jsonify({"success": False, "message": "Нельзя улучшить"}), 400
+                
+                update_balance(username, -cost)
+                model = {'crown': NFT_MODEL_CROWN, 'balloon': NFT_MODEL_BALLOON, 'planet': NFT_MODEL_PLANET}[gift['type']]
+                bgs = {'crown': NFT_BACKGROUNDS_CROWN, 'balloon': NFT_BACKGROUNDS_BALLOON, 'planet': NFT_BACKGROUNDS_PLANET}[gift['type']]
+                pats = {'crown': NFT_PATTERNS_CROWN, 'balloon': NFT_PATTERNS_BALLOON, 'planet': NFT_PATTERNS_PLANET}[gift['type']]
+                
+                weights = [0.5, 0.35, 0.15] if gift['type'] in ['balloon','planet'] else None
+                bg = random.choices(bgs, weights=weights, k=1)[0] if weights else random.choice(bgs)
+                
+                nft_data = {"owner": username, "gift_id": gid, "model": model, "background": bg, 
+                            "pattern": random.choice(pats), "activated_at": datetime.now().isoformat(),
+                            "rarity_scores": {"model": model['rarity'], "background": bg.get('rarity','common'), "pattern": random.choice(['common','rare','legendary'])}}
+                
+                cur.execute("INSERT INTO nft_registry(owner, gift_id, model, background, pattern, activated_at, rarity_scores, transfer_history) VALUES(%s,%s,%s,%s,%s,%s,%s, '[]'::jsonb) RETURNING id",
+                            (username, gid, json.dumps(model), json.dumps(bg), json.dumps(random.choice(pats)), nft_data['activated_at'], json.dumps(nft_data['rarity_scores'])))
+                nft_id = cur.fetchone()['id']
+                nft_data['id'] = nft_id
+                
+                gift['nft'] = nft_data
+                gifts[idx] = gift
+                cur.execute("UPDATE users SET gifts=%s, nfts=nfts||%s::jsonb WHERE username=%s", (json.dumps(gifts), json.dumps([nft_id]), username))
+                
+        invalidate_cache(username)
+        return jsonify({"success": True, "nft": nft_data, "message": f"🎉 {model['icon']} NFT #{nft_id} активирован!", "new_balance": get_balance(username)})
+    except: return jsonify({"success": False, "message": "Ошибка"}), 500
+
+@app.route('/api/get_nft_info', methods=['POST'])
+def get_nft_info():
+    try:
+        nft_id = request.get_json(force=True).get('nft_id')
+        with get_db() as conn:
+            with conn.cursor(cursor_factory=RealDictCursor) as cur:
+                cur.execute("SELECT * FROM nft_registry WHERE id=%s", (nft_id,))
+                nft = cur.fetchone()
+                if not nft: return jsonify({"success": False, "message": "NFT не найден"}), 404
+                d = dict(nft)
+                if isinstance(d['model'], str): d['model'] = json.loads(d['model'])
+                if isinstance(d['background'], str): d['background'] = json.loads(d['background'])
+                if isinstance(d['pattern'], str): d['pattern'] = json.loads(d['pattern'])
+                return jsonify({"success": True, "nft": d})
+    except: return jsonify({"success": False}), 500
+
+@app.route('/api/sell_gift', methods=['POST'])
+def sell_gift():
+    try:
+        data = request.get_json(force=True)
+        username, gid = data.get('username','').lower(), data.get('gift_id')
+        with get_db() as conn:
+            with conn.cursor() as cur:
+                cur.execute("SELECT gifts FROM users WHERE username=%s", (username,))
+                gifts = cur.fetchone()[0]
+                idx = next((i for i,g in enumerate(gifts) if g['id']==gid), None)
+                if idx is None: return jsonify({"success": False, "message": "Подарок не найден"}), 404
+                
+                gift = gifts[idx]
+                price = gift['nft']['model']['value'] if gift.get('nft') else (450 if gift['type']=='crown' else 900 if gift['type']=='balloon' else 2250 if gift['type']=='planet' else 45)
+                gifts.pop(idx)
+                cur.execute("UPDATE users SET gifts=%s WHERE username=%s", (json.dumps(gifts), username))
+                new_bal = update_balance(username, price)
+        invalidate_cache(username)
+        return jsonify({"success": True, "new_balance": new_bal, "earned": price})
+    except: return jsonify({"success": False}), 500
+
+@app.route('/api/toggle_gifts', methods=['POST'])
+def toggle_gifts():
+    try:
+        data = request.get_json(force=True)
+        with get_db() as conn:
+            with conn.cursor() as cur: cur.execute("UPDATE users SET show_gifts=%s WHERE username=%s", (data.get('show',True), data.get('username','').lower()))
+        invalidate_cache(data.get('username','').lower())
+        return jsonify({"success": True, "show_gifts": data.get('show',True)})
+    except: return jsonify({"success": False}), 500
+
+@app.route('/api/get_user_gifts', methods=['POST'])
+def get_user_gifts():
+    try:
+        username = request.get_json(force=True).get('username','').lower()
+        with get_db() as conn:
+            with conn.cursor(cursor_factory=RealDictCursor) as cur:
+                cur.execute("SELECT gifts, show_gifts FROM users WHERE username=%s", (username,))
+                r = cur.fetchone()
+                return jsonify({"success": True, "gifts": r['gifts'], "show_gifts": r['show_gifts']}) if r else jsonify({"success": False, "gifts": []}), 404
+    except: return jsonify({"success": False, "gifts": []}), 500
+
+@app.route('/api/add_reaction', methods=['POST'])
+def add_reaction():
+    try:
+        data = request.get_json(force=True)
+        username, chat_id, msg_id, reaction = data.get('username','').lower(), data.get('chat_id'), data.get('message_id'), data.get('reaction')
+        with get_db() as conn:
+            with conn.cursor(cursor_factory=RealDictCursor) as cur:
+                cur.execute("SELECT reactions FROM messages WHERE chat_id=%s AND id=%s", (chat_id, msg_id))
+                r = cur.fetchone()
+                if not r: return jsonify({"success": False}), 404
+                reacts = r['reactions']
+                existing = next((x for x in reacts if x['user']==username), None)
+                if existing:
+                    if existing['type']==reaction: reacts.remove(existing)
+                    else: existing['type']=reaction
+                else: reacts.append({"user":username,"type":reaction,"timestamp":datetime.now().isoformat()})
+                cur.execute("UPDATE messages SET reactions=%s WHERE chat_id=%s AND id=%s", (json.dumps(reacts), chat_id, msg_id))
+                return jsonify({"success": True, "reactions": reacts})
+        return jsonify({"success": False}), 404
+    except: return jsonify({"success": False}), 500
+
+@app.route('/api/update_profile', methods=['POST'])
+def update_profile():
+    try:
+        data = request.get_json(force=True)
+        username = data.get('username','').lower()
+        with get_db() as conn:
+            with conn.cursor() as cur:
+                if data.get('new_username'):
+                    new_u = data['new_username'].replace('@','').lower()
+                    if new_u != username:
+                        cur.execute("SELECT 1 FROM users WHERE username=%s", (new_u,))
+                        if cur.fetchone(): return jsonify({"success": False, "message": "Юзернейм занят"}), 400
+                        cur.execute("UPDATE users SET username=%s WHERE username=%s", (new_u, username))
+                        cur.execute("UPDATE contacts SET username=%s WHERE username=%s", (new_u, username))
+                        cur.execute("UPDATE contacts SET contact=%s WHERE contact=%s", (new_u, username))
+                        cur.execute("UPDATE blocked SET username=%s WHERE username=%s", (new_u, username))
+                        cur.execute("UPDATE blocked SET blocked_user=%s WHERE blocked_user=%s", (new_u, username))
+                        username = new_u
+                
+                for f in ['avatar','bio','status']:
+                    if data.get(f) is not None: cur.execute(f"UPDATE users SET {f}=%s WHERE username=%s", (data[f], username))
+                
+                cur.execute("SELECT * FROM users WHERE username=%s", (username,))
+                u = dict(cur.fetchone())
+                u['balance'] = get_balance(username)
+                u.pop('password', None)
+        invalidate_cache()
+        return jsonify({"success": True, "user": u})
+    except: return jsonify({"success": False}), 500
+
+@app.route('/api/update_channel', methods=['POST'])
+def update_channel():
+    try:
+        data = request.get_json(force=True)
+        chat_id, owner = data.get('chat_id'), data.get('username','').lower()
+        with get_db() as conn:
+            with conn.cursor(cursor_factory=RealDictCursor) as cur:
+                cur.execute("SELECT * FROM chats WHERE id=%s AND owner=%s AND type IN ('channel','group')", (chat_id, owner))
+                if not cur.fetchone(): return jsonify({"success": False, "message": "Ошибка"}), 400
+                for f in ['name','description','avatar']:
+                    if data.get(f) is not None: cur.execute(f"UPDATE chats SET {f}=%s WHERE id=%s", (data[f], chat_id))
+                if data.get('username') is not None: cur.execute("UPDATE chats SET username=%s WHERE id=%s", (data['username'].replace('@','').lower(), chat_id))
+                cur.execute("SELECT * FROM chats WHERE id=%s", (chat_id,))
+                return jsonify({"success": True, "chat": dict(cur.fetchone())})
+    except: return jsonify({"success": False}), 500
+
+@app.route('/api/get_channel_subscribers', methods=['POST'])
+def get_channel_subscribers():
+    try:
+        data = request.get_json(force=True)
+        chat_id, owner = data.get('chat_id'), data.get('username','').lower()
+        with get_db() as conn:
+            with conn.cursor(cursor_factory=RealDictCursor) as cur:
+                cur.execute("SELECT participants FROM chats WHERE id=%s AND owner=%s", (chat_id, owner))
+                r = cur.fetchone()
+                if not r: return jsonify({"success": False, "message": "Ошибка"}), 400
+                subs = []
+                for p in r['participants']:
+                    cur.execute("SELECT username, avatar, bio FROM users WHERE username=%s", (p,))
+                    u = cur.fetchone()
+                    if u: subs.append(dict(u))
+                return jsonify({"success": True, "subscribers": subs, "count": len(subs)})
+    except: return jsonify({"success": False}), 500
+
+@app.route('/api/get_contacts', methods=['POST'])
+def get_contacts():
+    try:
+        username = request.get_json(force=True).get('username','').lower()
+        return jsonify({"contacts": get_contacts_cached(username)})
+    except: return jsonify({"contacts": []}), 500
+
+@app.route('/api/add_contact', methods=['POST'])
+def add_contact():
+    try:
+        data = request.get_json(force=True)
+        username, contact = data.get('username','').lower(), data.get('contact','').lower()
+        with get_db() as conn:
+            with conn.cursor() as cur:
+                cur.execute("SELECT 1 FROM blocked WHERE username=%s AND blocked_user=%s", (username, contact))
+                if cur.fetchone(): return jsonify({"success": False, "message": "Заблокирован"}), 400
+                cur.execute("INSERT INTO contacts VALUES(%s, %s) ON CONFLICT DO NOTHING", (username, contact))
+        invalidate_cache(username)
+        return jsonify({"success": True})
+    except: return jsonify({"success": False}), 500
+
+@app.route('/api/remove_contact', methods=['POST'])
+def remove_contact():
+    try:
+        data = request.get_json(force=True)
+        username, contact = data.get('username','').lower(), data.get('contact','').lower()
+        with get_db() as conn:
+            with conn.cursor() as cur: cur.execute("DELETE FROM contacts WHERE username=%s AND contact=%s", (username, contact))
+        invalidate_cache(username)
+        return jsonify({"success": True})
+    except: return jsonify({"success": False}), 500
+
+@app.route('/api/block_user', methods=['POST'])
+def block_user():
+    try:
+        data = request.get_json(force=True)
+        username, block = data.get('username','').lower(), data.get('block','').lower()
+        with get_db() as conn:
+            with conn.cursor() as cur:
+                cur.execute("INSERT INTO blocked VALUES(%s,%s) ON CONFLICT DO NOTHING", (username, block))
+                cur.execute("DELETE FROM contacts WHERE username=%s AND contact=%s", (username, block))
+        invalidate_cache(username)
+        return jsonify({"success": True})
+    except: return jsonify({"success": False}), 500
+
+@app.route('/api/unblock_user', methods=['POST'])
+def unblock_user():
+    try:
+        data = request.get_json(force=True)
+        username, unblock = data.get('username','').lower(), data.get('unblock','').lower()
+        with get_db() as conn:
+            with conn.cursor() as cur: cur.execute("DELETE FROM blocked WHERE username=%s AND blocked_user=%s", (username, unblock))
+        invalidate_cache(username)
+        return jsonify({"success": True})
+    except: return jsonify({"success": False}), 500
+
+@app.route('/api/get_blocked', methods=['POST'])
+def get_blocked():
+    try:
+        username = request.get_json(force=True).get('username','').lower()
+        with get_db() as conn:
+            with conn.cursor(cursor_factory=RealDictCursor) as cur:
+                cur.execute("SELECT u.username, u.avatar, u.bio FROM blocked b JOIN users u ON u.username=b.blocked_user WHERE b.username=%s", (username,))
+                return jsonify({"blocked": [dict(r) for r in cur.fetchall()]})
+    except: return jsonify({"blocked": []}), 500
+
+@app.route('/api/search_user', methods=['POST'])
+def search_user():
+    try:
+        data = request.get_json(force=True)
+        query, current = data.get('query','').replace('@','').lower(), data.get('current_user','').lower()
+        found = []
+        with get_db() as conn:
+            with conn.cursor(cursor_factory=RealDictCursor) as cur:
+                cur.execute("""
+                    SELECT username, bio, avatar, status, premium, verified 
+                    FROM users WHERE username LIKE %s AND username != %s
+                """, (f'%{query}%', current))
+                for u in cur.fetchall():
+                    ud = dict(u)
+                    cur.execute("SELECT 1 FROM contacts WHERE username=%s AND contact=%s", (current, ud['username']))
+                    ud['is_contact'] = bool(cur.fetchone())
+                    cur.execute("SELECT 1 FROM blocked WHERE username=%s AND blocked_user=%s", (current, ud['username']))
+                    ud['is_blocked'] = bool(cur.fetchone())
+                    found.append(ud)
+                cur.execute("""
+                    SELECT name, description, avatar, type, verified, id, username 
+                    FROM chats WHERE (name LIKE %s OR username LIKE %s) AND type IN ('group','channel')
+                """, (f'%{query}%', f'%{query}%'))
+                for c in cur.fetchall():
+                    cd = dict(c)
+                    cd['is_chat'] = True
+                    cd['bio'] = cd.pop('description', 'Чат')
+                    found.append(cd)
+        return jsonify(found)
+    except: return jsonify([]), 500
+
+@app.route('/api/get_chats', methods=['POST'])
+def get_chats():
+    try:
+        username = request.get_json(force=True).get('username','').lower()
+        chats = []
+        saved_id = f"saved_{username}"
+        with get_db() as conn:
+            with conn.cursor(cursor_factory=RealDictCursor) as cur:
+                cur.execute("SELECT 1 FROM chats WHERE id=%s", (saved_id,))
+                if not cur.fetchone():
+                    cur.execute("INSERT INTO chats(id,name,type,participants,created_at) VALUES(%s,%s,%s,%s,%s)", 
+                                (saved_id, "Избранное", "saved", json.dumps([username]), datetime.now().isoformat()))
+                
+                cur.execute("""
+                    SELECT * FROM chats WHERE id=%s OR %s = ANY(participants) OR owner=%s
+                """, (saved_id, username, username))
+                
+                for c in cur.fetchall():
+                    cd = dict(c)
+                    if cd['id'] == saved_id:
+                        cd['is_saved'] = True; cd['messages'] = []
+                    elif cd['type'] == 'private':
+                        others = [p for p in cd['participants'] if p.lower()!=username]
+                        if others and others[0] in get_all_usernames():
+                            u = get_user_dict(others[0])
+                            cd.update({"display_name":u['username'], "display_avatar":u['avatar'], "display_status":u['status'], 
+                                       "display_premium":u['premium'] or check_premium(u['username']), "display_verified":u['verified']})
+                            cur.execute("SELECT 1 FROM blocked WHERE username=%s AND blocked_user=%s", (username, others[0]))
+                            cd['blocked_by_me'] = bool(cur.fetchone())
+                    else:
+                        cd['subscribers'] = len(cd['participants'])
+                        cd['is_owner'] = cd['owner']==username
+                    chats.append(cd)
+        chats.sort(key=lambda x: x.get('created_at',''), reverse=True)
+        return jsonify(chats)
+    except: return jsonify([]), 500
+
+def get_all_usernames():
+    with get_db() as conn:
+        with conn.cursor() as cur: cur.execute("SELECT username FROM users"); return [r[0] for r in cur.fetchall()]
+
+def get_user_dict(username):
+    with get_db() as conn:
+        with conn.cursor(cursor_factory=RealDictCursor) as cur:
+            cur.execute("SELECT * FROM users WHERE username=%s", (username,))
+            return dict(cur.fetchone()) if cur.fetchone() else {}
+
+@app.route('/api/start_chat', methods=['POST'])
+def start_chat():
+    try:
+        data = request.get_json(force=True)
+        u1, u2 = data.get('user1','').lower(), data.get('user2','').lower()
+        with get_db() as conn:
+            with conn.cursor() as cur:
+                cur.execute("SELECT 1 FROM blocked WHERE (username=%s AND blocked_user=%s) OR (username=%s AND blocked_user=%s)", (u1,u2,u2,u1))
+                if cur.fetchone(): return jsonify({"success": False, "message": "Заблокирован"}), 400
+                
+                cur.execute("""
+                    SELECT id FROM chats WHERE type='private' AND %s = ANY(participants) AND %s = ANY(participants)
+                """, (u1, u2))
+                existing = cur.fetchone()
+                if existing: return jsonify({"success": True, "chat_id": existing[0]})
+                
+                new_id = str(datetime.now().timestamp())
+                cur.execute("INSERT INTO chats(id,name,type,participants,created_at) VALUES(%s,%s,%s,%s,%s)", 
+                            (new_id, u2, 'private', json.dumps([u1,u2]), datetime.now().isoformat()))
+        return jsonify({"success": True, "chat_id": new_id})
+    except: return jsonify({"success": False}), 500
+
+@app.route('/api/send_message', methods=['POST'])
+def send_message():
+    try:
+        data = request.get_json(force=True)
+        sender, chat_id = data.get('from_user','').lower(), data.get('chat_id')
+        with get_db() as conn:
+            with conn.cursor() as cur:
+                cur.execute("SELECT participants, type FROM chats WHERE id=%s", (chat_id,))
+                chat = cur.fetchone()
+                if chat and chat[1]=='private':
+                    for p in json.loads(chat[0]):
+                        if p!=sender:
+                            cur.execute("SELECT 1 FROM blocked WHERE username=%s AND blocked_user=%s", (p, sender))
+                            if cur.fetchone(): return jsonify({"success": False, "message": "Вас заблокировали", "blocked": True}), 400
+                
+                msg_id = str(datetime.now().timestamp())
+                cur.execute("""
+                    INSERT INTO messages(id,chat_id,"from",text,type,data,filename,duration,nft_id,time,timestamp,reactions)
+                    VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,'[]'::jsonb)
+                """, (msg_id, chat_id, sender, data.get('text'), data.get('type','text'), data.get('data'), data.get('fileName'), data.get('duration'), data.get('nft_id'), 
+                      datetime.now().strftime("%H:%M"), datetime.now().isoformat()))
+                cur.execute("SELECT COUNT(*) FROM messages WHERE chat_id=%s", (chat_id,))
+                return jsonify({"success": True, "message_count": cur.fetchone()[0], "message": {"id": msg_id}})
+        return jsonify({"success": False}), 404
+    except: return jsonify({"success": False}), 500
+
+@app.route('/api/get_messages', methods=['POST'])
+def get_messages():
+    try:
+        data = request.get_json(force=True)
+        chat_id, username = data.get('chat_id'), data.get('username','').lower()
+        with get_db() as conn:
+            with conn.cursor(cursor_factory=RealDictCursor) as cur:
+                cur.execute("SELECT participants, type FROM chats WHERE id=%s", (chat_id,))
+                chat = cur.fetchone()
+                is_blocked = False
+                if chat and chat['type']=='private':
+                    for p in json.loads(chat['participants']):
+                        if p!=username:
+                            cur.execute("SELECT 1 FROM blocked WHERE username=%s AND blocked_user=%s", (p, username))
+                            if cur.fetchone(): is_blocked=True; break
+                cur.execute("SELECT id,\"from\" as from_user,text,type,data,filename as \"fileName\",duration,nft_id,time,timestamp,reactions FROM messages WHERE chat_id=%s ORDER BY timestamp ASC", (chat_id,))
+                msgs = []
+                for m in cur.fetchall():
+                    md = dict(m)
+                    md['from'] = md.pop('from_user')
+                    msgs.append(md)
+                return jsonify({"success": True, "messages": msgs, "count": len(msgs), "is_blocked": is_blocked})
+        return jsonify({"success": False, "messages": [], "count": 0}), 404
+    except: return jsonify({"success": False, "messages": [], "count": 0}), 500
+
+@app.route('/api/create_chat', methods=['POST'])
+def create_chat():
+    try:
+        data = request.get_json(force=True)
+        owner = data.get('owner','').lower()
+        new_id = str(datetime.now().timestamp())
+        with get_db() as conn:
+            with conn.cursor() as cur:
+                cur.execute("""
+                    INSERT INTO chats(id,name,username,type,owner,participants,avatar,description,verified,created_at)
+                    VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)
+                """, (new_id, data.get('name'), data.get('username'), data.get('type'), owner, json.dumps([owner]), data.get('avatar'), data.get('description'), False, datetime.now().isoformat()))
+        return jsonify({"success": True})
+    except: return jsonify({"success": False}), 500
+
+@app.route('/api/buy_premium', methods=['POST'])
+def buy_premium():
+    try:
+        username = request.get_json(force=True).get('username','').lower()
+        with get_db() as conn:
+            with conn.cursor() as cur:
+                cur.execute("UPDATE users SET payment_pending=TRUE WHERE username=%s", (username,))
+                cur.execute("INSERT INTO purchases(username,type,amount,price,status,created_at) VALUES(%s,'premium',1,79,'pending',%s)", (username, datetime.now().isoformat()))
+        return jsonify({"success": True, "message": "Заявка отправлена!"})
+    except: return jsonify({"success": False}), 500
+
+@app.route('/api/get_user_profile', methods=['POST'])
+def get_user_profile():
+    try:
+        data = request.get_json(force=True)
+        target, current = data.get('username','').lower(), data.get('current_user','').lower()
+        with get_db() as conn:
+            with conn.cursor(cursor_factory=RealDictCursor) as cur:
+                cur.execute("SELECT username,avatar,bio,status,premium,verified,gifts,show_gifts FROM users WHERE username=%s", (target,))
+                u = cur.fetchone()
+                if u:
+                    ud = dict(u)
+                    ud['premium'] = ud['premium'] or check_premium(target)
+                    cur.execute("SELECT 1 FROM contacts WHERE username=%s AND contact=%s", (current, target))
+                    ud['is_contact'] = bool(cur.fetchone())
+                    cur.execute("SELECT 1 FROM blocked WHERE username=%s AND blocked_user=%s", (current, target))
+                    ud['is_blocked'] = bool(cur.fetchone())
+                    cur.execute("SELECT 1 FROM blocked WHERE username=%s AND blocked_user=%s", (target, current))
+                    ud['blocked_me'] = bool(cur.fetchone())
+                    return jsonify({"success": True, "user": ud})
+        return jsonify({"success": False}), 404
+    except: return jsonify({"success": False}), 500
+
+@app.route('/api/health', methods=['GET'])
+def health_check():
+    try:
+        with get_db() as conn:
+            with conn.cursor() as cur: cur.execute("SELECT COUNT(*) FROM users")
+            u_count = cur.fetchone()[0]
+        return jsonify({"status": "ok", "db_connected": True, "users": u_count, "timestamp": datetime.now().isoformat()})
+    except Exception as e:
+        return jsonify({"status": "error", "message": str(e)}), 500
+
+# === ЗАПУСК ===
+if __name__ == '__main__':
+    PORT = int(os.environ.get("PORT", 5000))
+    HOST = "0.0.0.0"
+    print(f"\n🚀 ARTgram Server v3.0 запущен на {HOST}:{PORT}")
+    init_db()
+    from werkzeug.serving import run_simple
+    try: run_simple(HOST, PORT, app, use_reloader=False, threaded=True)
+    except Exception as e: logger.critical(f"🚨 Ошибка: {e}")#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
 ARTgram Server v2.4
 Полнофункциональный бэкенд для мессенджера с поддержкой:
 - Регистрации/авторизации
