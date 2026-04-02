@@ -1,0 +1,6059 @@
+{
+  "nfts": [
+    {
+      "id": 5,
+      "owner": "fiman",
+      "gift_id": "1774804803.102874",
+      "model": {
+        "id": "model_2",
+        "name": "майнкрафт",
+        "value": 750,
+        "rarity": "rare"
+      },
+      "background": {
+        "id": "bg_3",
+        "name": "Лес",
+        "color": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)"
+      },
+      "pattern": {
+        "id": "pattern_4",
+        "name": "Кисточка",
+        "symbol": "🎨"
+      },
+      "activated_at": "2026-03-29T21:28:14.849409",
+      "rarity_scores": {
+        "model": "rare",
+        "background": "rare",
+        "pattern": "legendary"
+      }
+    },
+    {
+      "id": 2,
+      "owner": "artem",
+      "gift_id": "1774804800.782863",
+      "model": {
+        "id": "model_3",
+        "name": "кактус",
+        "value": 1000,
+        "rarity": "legendary"
+      },
+      "background": {
+        "id": "bg_5",
+        "name": "Огонь",
+        "color": "linear-gradient(135deg, #fa709a 0%, #fee140 100%)"
+      },
+      "pattern": {
+        "id": "pattern_5",
+        "name": "Круг",
+        "symbol": "●"
+      },
+      "activated_at": "2026-03-29T21:28:48.140274",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "legendary",
+        "pattern": "legendary"
+      }
+    },
+    {
+      "id": 3,
+      "owner": "artem",
+      "gift_id": "1774804804.798504",
+      "model": {
+        "id": "model_3",
+        "name": "кактус",
+        "value": 1000,
+        "rarity": "legendary"
+      },
+      "background": {
+        "id": "bg_5",
+        "name": "Огонь",
+        "color": "linear-gradient(135deg, #fa709a 0%, #fee140 100%)"
+      },
+      "pattern": {
+        "id": "pattern_4",
+        "name": "Кисточка",
+        "symbol": "🎨"
+      },
+      "activated_at": "2026-03-29T21:37:41.874085",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "common",
+        "pattern": "common"
+      }
+    },
+    {
+      "id": 4,
+      "owner": "artem",
+      "gift_id": "1774804825.069129",
+      "model": {
+        "id": "model_1",
+        "name": "фиолетовый пиксель",
+        "value": 500,
+        "rarity": "common"
+      },
+      "background": {
+        "id": "bg_5",
+        "name": "Огонь",
+        "color": "linear-gradient(135deg, #fa709a 0%, #fee140 100%)"
+      },
+      "pattern": {
+        "id": "pattern_1",
+        "name": "Галочка",
+        "symbol": "✓"
+      },
+      "activated_at": "2026-03-29T21:38:05.172580",
+      "rarity_scores": {
+        "model": "common",
+        "background": "rare",
+        "pattern": "rare"
+      }
+    },
+    {
+      "id": 1,
+      "owner": "artem",
+      "gift_id": "1774804807.151679",
+      "model": {
+        "id": "model_2",
+        "name": "майнкрафт",
+        "value": 750,
+        "rarity": "rare"
+      },
+      "background": {
+        "id": "bg_4",
+        "name": "Космос",
+        "color": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
+      },
+      "pattern": {
+        "id": "pattern_5",
+        "name": "Круг",
+        "symbol": "●"
+      },
+      "activated_at": "2026-03-29T21:56:09.100648",
+      "rarity_scores": {
+        "model": "rare",
+        "background": "rare",
+        "pattern": "legendary"
+      },
+      "transfer_history": [
+        {
+          "from": "artem",
+          "to": "levchik",
+          "date": "2026-04-01T21:42:33.638184"
+        },
+        {
+          "from": "levchik",
+          "to": "artem",
+          "date": "2026-04-01T21:43:42.535502"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "owner": "artem",
+      "gift_id": "1774804810.045673",
+      "model": {
+        "id": "model_3",
+        "name": "кактус",
+        "value": 1000,
+        "rarity": "legendary"
+      },
+      "background": {
+        "id": "bg_3",
+        "name": "Лес",
+        "color": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)"
+      },
+      "pattern": {
+        "id": "pattern_3",
+        "name": "Птица",
+        "symbol": "🕊"
+      },
+      "activated_at": "2026-03-29T22:02:36.078369",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "rare",
+        "pattern": "legendary"
+      }
+    },
+    {
+      "id": 7,
+      "owner": "artem",
+      "gift_id": "1774804828.125941",
+      "model": {
+        "id": "model_1",
+        "name": "фиолетовый пиксель",
+        "value": 500,
+        "rarity": "common"
+      },
+      "background": {
+        "id": "bg_1",
+        "name": "Рассвет",
+        "color": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)"
+      },
+      "pattern": {
+        "id": "pattern_5",
+        "name": "Круг",
+        "symbol": "●"
+      },
+      "activated_at": "2026-03-29T22:12:23.628011",
+      "rarity_scores": {
+        "model": "common",
+        "background": "rare",
+        "pattern": "legendary"
+      }
+    },
+    {
+      "id": 8,
+      "owner": "artem",
+      "gift_id": "1774804834.084248",
+      "model": {
+        "id": "model_2",
+        "name": "майнкрафт",
+        "value": 750,
+        "rarity": "rare"
+      },
+      "background": {
+        "id": "bg_1",
+        "name": "Рассвет",
+        "color": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)"
+      },
+      "pattern": {
+        "id": "pattern_1",
+        "name": "Галочка",
+        "symbol": "✓"
+      },
+      "activated_at": "2026-03-30T09:01:21.642766",
+      "rarity_scores": {
+        "model": "rare",
+        "background": "legendary",
+        "pattern": "rare"
+      }
+    },
+    {
+      "id": 9,
+      "owner": "artem",
+      "gift_id": "1774804836.004786",
+      "model": {
+        "id": "model_3",
+        "name": "кактус",
+        "value": 1000,
+        "rarity": "legendary"
+      },
+      "background": {
+        "id": "bg_4",
+        "name": "Космос",
+        "color": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
+      },
+      "pattern": {
+        "id": "pattern_1",
+        "name": "Галочка",
+        "symbol": "✓"
+      },
+      "activated_at": "2026-03-30T09:01:52.366311",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "rare",
+        "pattern": "legendary"
+      }
+    },
+    {
+      "id": 10,
+      "owner": "artem",
+      "gift_id": "1774804837.732354",
+      "model": {
+        "id": "model_1",
+        "name": "фиолетовый пиксель",
+        "value": 500,
+        "rarity": "common"
+      },
+      "background": {
+        "id": "bg_1",
+        "name": "Рассвет",
+        "color": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)"
+      },
+      "pattern": {
+        "id": "pattern_1",
+        "name": "Галочка",
+        "symbol": "✓"
+      },
+      "activated_at": "2026-03-30T09:02:07.388605",
+      "rarity_scores": {
+        "model": "common",
+        "background": "rare",
+        "pattern": "rare"
+      }
+    },
+    {
+      "id": 11,
+      "owner": "artem",
+      "gift_id": "1774850582.011515",
+      "model": {
+        "id": "model_2",
+        "name": "майнкрафт",
+        "value": 750,
+        "rarity": "rare"
+      },
+      "background": {
+        "id": "bg_3",
+        "name": "Лес",
+        "color": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)"
+      },
+      "pattern": {
+        "id": "pattern_1",
+        "name": "Галочка",
+        "symbol": "✓"
+      },
+      "activated_at": "2026-03-30T09:03:26.398013",
+      "rarity_scores": {
+        "model": "rare",
+        "background": "legendary",
+        "pattern": "legendary"
+      }
+    },
+    {
+      "id": 12,
+      "owner": "artem",
+      "gift_id": "1774850583.883039",
+      "model": {
+        "id": "model_3",
+        "name": "кактус",
+        "value": 1000,
+        "rarity": "legendary"
+      },
+      "background": {
+        "id": "bg_2",
+        "name": "Океан",
+        "color": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)"
+      },
+      "pattern": {
+        "id": "pattern_1",
+        "name": "Галочка",
+        "symbol": "✓"
+      },
+      "activated_at": "2026-03-30T09:03:44.246289",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "legendary",
+        "pattern": "rare"
+      }
+    },
+    {
+      "id": 13,
+      "owner": "artem",
+      "gift_id": "1774804922.553817",
+      "model": {
+        "id": "model_3",
+        "name": "кактус",
+        "value": 1000,
+        "rarity": "legendary"
+      },
+      "background": {
+        "id": "bg_2",
+        "name": "Океан",
+        "color": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)"
+      },
+      "pattern": {
+        "id": "pattern_5",
+        "name": "Круг",
+        "symbol": "●"
+      },
+      "activated_at": "2026-03-30T09:06:06.904133",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "common",
+        "pattern": "common"
+      }
+    },
+    {
+      "id": 14,
+      "owner": "chap1a",
+      "gift_id": "1774850743.833347",
+      "model": {
+        "id": "model_3",
+        "name": "кактус",
+        "value": 1000,
+        "rarity": "legendary"
+      },
+      "background": {
+        "id": "bg_3",
+        "name": "Лес",
+        "color": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)"
+      },
+      "pattern": {
+        "id": "pattern_4",
+        "name": "Кисточка",
+        "symbol": "🎨"
+      },
+      "activated_at": "2026-03-30T09:06:51.036535",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "rare",
+        "pattern": "common"
+      }
+    },
+    {
+      "id": 15,
+      "owner": "chap1a",
+      "gift_id": "1774855333.325366",
+      "model": {
+        "id": "crown",
+        "name": "Корона",
+        "value": 500,
+        "rarity": "legendary",
+        "icon": "👑"
+      },
+      "background": {
+        "id": "bg_3",
+        "name": "Лес",
+        "color": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)"
+      },
+      "pattern": {
+        "id": "pattern_1",
+        "name": "Галочка",
+        "symbol": "✓"
+      },
+      "activated_at": "2026-03-30T10:23:19.424030",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "legendary",
+        "pattern": "common"
+      }
+    },
+    {
+      "id": 16,
+      "owner": "chap1a",
+      "gift_id": "1774855334.972991",
+      "model": {
+        "id": "crown",
+        "name": "Корона",
+        "value": 500,
+        "rarity": "legendary",
+        "icon": "👑"
+      },
+      "background": {
+        "id": "bg_5",
+        "name": "Огонь",
+        "color": "linear-gradient(135deg, #fa709a 0%, #fee140 100%)"
+      },
+      "pattern": {
+        "id": "pattern_1",
+        "name": "Галочка",
+        "symbol": "✓"
+      },
+      "activated_at": "2026-03-30T12:19:48.087498",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "legendary",
+        "pattern": "common"
+      }
+    },
+    {
+      "id": 17,
+      "owner": "artem",
+      "gift_id": "1774855336.61004",
+      "model": {
+        "id": "crown",
+        "name": "Корона",
+        "value": 500,
+        "rarity": "legendary",
+        "icon": "👑"
+      },
+      "background": {
+        "id": "bg_2",
+        "name": "Океан",
+        "color": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)"
+      },
+      "pattern": {
+        "id": "pattern_2",
+        "name": "Буква A",
+        "symbol": "A"
+      },
+      "activated_at": "2026-03-30T12:22:23.476412",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "rare",
+        "pattern": "rare"
+      }
+    },
+    {
+      "id": 18,
+      "owner": "artem",
+      "gift_id": "1774855337.968758",
+      "model": {
+        "id": "crown",
+        "name": "Корона",
+        "value": 500,
+        "rarity": "legendary",
+        "icon": "👑"
+      },
+      "background": {
+        "id": "bg_3",
+        "name": "Лес",
+        "color": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)"
+      },
+      "pattern": {
+        "id": "pattern_3",
+        "name": "Птица",
+        "symbol": "🕊"
+      },
+      "activated_at": "2026-03-30T12:22:42.203563",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "legendary",
+        "pattern": "legendary"
+      }
+    },
+    {
+      "id": 19,
+      "owner": "chap1a",
+      "gift_id": "1774855363.743012",
+      "model": {
+        "id": "crown",
+        "name": "Корона",
+        "value": 500,
+        "rarity": "legendary",
+        "icon": "👑"
+      },
+      "background": {
+        "id": "bg_1",
+        "name": "Рассвет",
+        "color": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)"
+      },
+      "pattern": {
+        "id": "pattern_5",
+        "name": "Круг",
+        "symbol": "●"
+      },
+      "activated_at": "2026-03-30T12:22:54.793878",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "common",
+        "pattern": "rare"
+      }
+    },
+    {
+      "id": 20,
+      "owner": "artgrambank",
+      "gift_id": "1774869123.447781",
+      "model": {
+        "id": "crown",
+        "name": "Корона",
+        "value": 500,
+        "rarity": "legendary",
+        "icon": "👑"
+      },
+      "background": {
+        "id": "bg_4",
+        "name": "Космос",
+        "color": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
+      },
+      "pattern": {
+        "id": "pattern_5",
+        "name": "Круг",
+        "symbol": "●",
+        "class": "pattern-circle"
+      },
+      "activated_at": "2026-03-30T15:14:10.692862",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "legendary",
+        "pattern": "common"
+      },
+      "transfer_history": [
+        {
+          "from": "h",
+          "to": "artem",
+          "date": "2026-04-01T15:56:55.533897"
+        },
+        {
+          "from": "artem",
+          "to": "artgrambank",
+          "date": "2026-04-01T21:32:49.332658"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "owner": "h",
+      "gift_id": "1774872902.992302",
+      "model": {
+        "id": "crown",
+        "name": "Корона",
+        "value": 500,
+        "rarity": "legendary",
+        "icon": "👑"
+      },
+      "background": {
+        "id": "bg_1",
+        "name": "Рассвет",
+        "color": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)"
+      },
+      "pattern": {
+        "id": "pattern_5",
+        "name": "Круг",
+        "symbol": "●",
+        "class": "pattern-circle"
+      },
+      "activated_at": "2026-03-30T15:15:19.306430",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "common",
+        "pattern": "legendary"
+      }
+    },
+    {
+      "id": 22,
+      "owner": "artem",
+      "gift_id": "1774873071.476414",
+      "model": {
+        "id": "crown",
+        "name": "Корона",
+        "value": 500,
+        "rarity": "legendary",
+        "icon": "👑"
+      },
+      "background": {
+        "id": "bg_2",
+        "name": "Океан",
+        "color": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)"
+      },
+      "pattern": {
+        "id": "pattern_4",
+        "name": "Кисточка",
+        "symbol": "🎨",
+        "class": "pattern-brush"
+      },
+      "activated_at": "2026-03-30T15:18:11.386139",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "legendary",
+        "pattern": "rare"
+      }
+    },
+    {
+      "id": 23,
+      "owner": "chap1a",
+      "gift_id": "1774874997.176849",
+      "model": {
+        "id": "crown",
+        "name": "Корона",
+        "value": 500,
+        "rarity": "legendary",
+        "icon": "👑"
+      },
+      "background": {
+        "id": "bg_3",
+        "name": "Лес",
+        "color": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)"
+      },
+      "pattern": {
+        "id": "pattern_1",
+        "name": "Галочка",
+        "symbol": "✓",
+        "class": "pattern-checkmark"
+      },
+      "activated_at": "2026-03-30T15:52:25.841775",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "legendary",
+        "pattern": "legendary"
+      },
+      "transfer_history": [
+        {
+          "from": "artem",
+          "to": "chap1a",
+          "date": "2026-03-30T16:22:52.066812"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "owner": "artem",
+      "gift_id": "1774874999.925479",
+      "model": {
+        "id": "crown",
+        "name": "Корона",
+        "value": 500,
+        "rarity": "legendary",
+        "icon": "👑"
+      },
+      "background": {
+        "id": "bg_5",
+        "name": "Огонь",
+        "color": "linear-gradient(135deg, #fa709a 0%, #fee140 100%)"
+      },
+      "pattern": {
+        "id": "pattern_1",
+        "name": "Галочка",
+        "symbol": "✓",
+        "class": "pattern-checkmark"
+      },
+      "activated_at": "2026-03-30T15:54:59.758827",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "legendary",
+        "pattern": "rare"
+      }
+    },
+    {
+      "id": 25,
+      "owner": "kaktak",
+      "gift_id": "1774875001.332301",
+      "model": {
+        "id": "crown",
+        "name": "Корона",
+        "value": 500,
+        "rarity": "legendary",
+        "icon": "👑"
+      },
+      "background": {
+        "id": "bg_4",
+        "name": "Космос",
+        "color": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
+      },
+      "pattern": {
+        "id": "pattern_1",
+        "name": "Галочка",
+        "symbol": "✓",
+        "class": "pattern-checkmark"
+      },
+      "activated_at": "2026-03-30T15:55:15.882873",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "common",
+        "pattern": "legendary"
+      },
+      "transfer_history": [
+        {
+          "from": "artem",
+          "to": "kaktak",
+          "date": "2026-03-30T16:39:22.583250"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "owner": "fiman",
+      "gift_id": "1774875002.740849",
+      "model": {
+        "id": "crown",
+        "name": "Корона",
+        "value": 500,
+        "rarity": "legendary",
+        "icon": "👑"
+      },
+      "background": {
+        "id": "bg_5",
+        "name": "Огонь",
+        "color": "linear-gradient(135deg, #fa709a 0%, #fee140 100%)"
+      },
+      "pattern": {
+        "id": "pattern_3",
+        "name": "Птица",
+        "symbol": "🕊",
+        "class": "pattern-bird"
+      },
+      "activated_at": "2026-03-30T15:55:24.674596",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "rare",
+        "pattern": "legendary"
+      },
+      "transfer_history": [
+        {
+          "from": "artem",
+          "to": "fiman",
+          "date": "2026-03-30T16:23:24.653509"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "owner": "kaktak",
+      "gift_id": "1774875004.509919",
+      "model": {
+        "id": "crown",
+        "name": "Корона",
+        "value": 500,
+        "rarity": "legendary",
+        "icon": "👑"
+      },
+      "background": {
+        "id": "bg_3",
+        "name": "Лес",
+        "color": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)"
+      },
+      "pattern": {
+        "id": "pattern_2",
+        "name": "Буква A",
+        "symbol": "A",
+        "class": "pattern-letter-a"
+      },
+      "activated_at": "2026-03-30T16:25:08.726705",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "legendary",
+        "pattern": "rare"
+      },
+      "transfer_history": [
+        {
+          "from": "artem",
+          "to": "kaktak",
+          "date": "2026-03-30T16:39:28.962324"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "owner": "kaktak",
+      "gift_id": "1774875006.043258",
+      "model": {
+        "id": "crown",
+        "name": "Корона",
+        "value": 500,
+        "rarity": "legendary",
+        "icon": "👑"
+      },
+      "background": {
+        "id": "bg_1",
+        "name": "Рассвет",
+        "color": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)"
+      },
+      "pattern": {
+        "id": "pattern_1",
+        "name": "Галочка",
+        "symbol": "✓",
+        "class": "pattern-checkmark"
+      },
+      "activated_at": "2026-03-30T16:25:55.748501",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "legendary",
+        "pattern": "legendary"
+      },
+      "transfer_history": [
+        {
+          "from": "artem",
+          "to": "kaktak",
+          "date": "2026-03-30T16:39:26.682309"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "owner": "fiman",
+      "gift_id": "1774875008.837968",
+      "model": {
+        "id": "crown",
+        "name": "Корона",
+        "value": 500,
+        "rarity": "legendary",
+        "icon": "👑"
+      },
+      "background": {
+        "id": "bg_5",
+        "name": "Огонь",
+        "color": "linear-gradient(135deg, #fa709a 0%, #fee140 100%)"
+      },
+      "pattern": {
+        "id": "pattern_2",
+        "name": "Буква A",
+        "symbol": "A",
+        "class": "pattern-letter-a"
+      },
+      "activated_at": "2026-03-30T16:26:05.375014",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "rare",
+        "pattern": "legendary"
+      },
+      "transfer_history": [
+        {
+          "from": "artem",
+          "to": "fiman",
+          "date": "2026-03-31T21:16:09.690626"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "owner": "kaktak",
+      "gift_id": "1774877803.39625",
+      "model": {
+        "id": "crown",
+        "name": "Корона",
+        "value": 500,
+        "rarity": "legendary",
+        "icon": "👑"
+      },
+      "background": {
+        "id": "bg_4",
+        "name": "Космос",
+        "color": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
+      },
+      "pattern": {
+        "id": "pattern_3",
+        "name": "Птица",
+        "symbol": "🕊",
+        "class": "pattern-bird"
+      },
+      "activated_at": "2026-03-30T16:37:21.181771",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "common",
+        "pattern": "rare"
+      },
+      "transfer_history": [
+        {
+          "from": "kaktak",
+          "to": "artem",
+          "date": "2026-03-30T16:39:04.448348"
+        },
+        {
+          "from": "artem",
+          "to": "kaktak",
+          "date": "2026-03-30T16:41:48.483105"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "owner": "kaktak",
+      "gift_id": "1774877805.713065",
+      "model": {
+        "id": "crown",
+        "name": "Корона",
+        "value": 500,
+        "rarity": "legendary",
+        "icon": "👑"
+      },
+      "background": {
+        "id": "bg_4",
+        "name": "Космос",
+        "color": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
+      },
+      "pattern": {
+        "id": "pattern_1",
+        "name": "Галочка",
+        "symbol": "✓",
+        "class": "pattern-checkmark"
+      },
+      "activated_at": "2026-03-30T16:37:35.144003",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "rare",
+        "pattern": "common"
+      }
+    },
+    {
+      "id": 32,
+      "owner": "kaktak",
+      "gift_id": "1774877807.032674",
+      "model": {
+        "id": "crown",
+        "name": "Корона",
+        "value": 500,
+        "rarity": "legendary",
+        "icon": "👑"
+      },
+      "background": {
+        "id": "bg_5",
+        "name": "Огонь",
+        "color": "linear-gradient(135deg, #fa709a 0%, #fee140 100%)"
+      },
+      "pattern": {
+        "id": "pattern_5",
+        "name": "Круг",
+        "symbol": "●",
+        "class": "pattern-circle"
+      },
+      "activated_at": "2026-03-30T16:37:43.968546",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "rare",
+        "pattern": "rare"
+      }
+    },
+    {
+      "id": 33,
+      "owner": "artem",
+      "gift_id": "1774875007.538783",
+      "model": {
+        "id": "crown",
+        "name": "Корона",
+        "value": 500,
+        "rarity": "legendary",
+        "icon": "👑"
+      },
+      "background": {
+        "id": "bg_4",
+        "name": "Космос",
+        "color": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
+      },
+      "pattern": {
+        "id": "pattern_3",
+        "name": "Птица",
+        "symbol": "🕊",
+        "class": "pattern-bird"
+      },
+      "activated_at": "2026-03-30T16:41:38.683706",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "legendary",
+        "pattern": "rare"
+      }
+    },
+    {
+      "id": 34,
+      "owner": "chap1a",
+      "gift_id": "1774875010.304317",
+      "model": {
+        "id": "crown",
+        "name": "Корона",
+        "value": 500,
+        "rarity": "legendary",
+        "icon": "👑"
+      },
+      "background": {
+        "id": "bg_5",
+        "name": "Огонь",
+        "color": "linear-gradient(135deg, #fa709a 0%, #fee140 100%)"
+      },
+      "pattern": {
+        "id": "pattern_1",
+        "name": "Галочка",
+        "symbol": "✓",
+        "class": "pattern-checkmark"
+      },
+      "activated_at": "2026-03-30T16:43:16.372756",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "common",
+        "pattern": "rare"
+      },
+      "transfer_history": [
+        {
+          "from": "artem",
+          "to": "chap1a",
+          "date": "2026-03-30T16:43:39.154866"
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "owner": "chap1a",
+      "gift_id": "1774878274.685068",
+      "model": {
+        "id": "crown",
+        "name": "Корона",
+        "value": 500,
+        "rarity": "legendary",
+        "icon": "👑"
+      },
+      "background": {
+        "id": "bg_3",
+        "name": "Лес",
+        "color": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)"
+      },
+      "pattern": {
+        "id": "pattern_3",
+        "name": "Птица",
+        "symbol": "🕊",
+        "class": "pattern-bird"
+      },
+      "activated_at": "2026-03-30T16:44:55.114607",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "common",
+        "pattern": "common"
+      },
+      "transfer_history": [
+        {
+          "from": "artem",
+          "to": "chap1a",
+          "date": "2026-03-30T16:45:26.567000"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "owner": "chap1a",
+      "gift_id": "1774980912.762096",
+      "model": {
+        "id": "crown",
+        "name": "Корона",
+        "value": 500,
+        "rarity": "legendary",
+        "icon": "👑"
+      },
+      "background": {
+        "id": "bg_3",
+        "name": "Лес",
+        "color": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)"
+      },
+      "pattern": {
+        "id": "pattern_1",
+        "name": "Галочка",
+        "symbol": "✓",
+        "class": "pattern-checkmark"
+      },
+      "activated_at": "2026-03-31T21:15:30.128397",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "rare",
+        "pattern": "common"
+      },
+      "transfer_history": [
+        {
+          "from": "artem",
+          "to": "chap1a",
+          "date": "2026-03-31T21:15:50.676473"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "owner": "chap1a",
+      "gift_id": "1774863771.826211",
+      "model": {
+        "id": "crown",
+        "name": "Корона",
+        "value": 500,
+        "rarity": "legendary",
+        "icon": "👑"
+      },
+      "background": {
+        "id": "bg_5",
+        "name": "Огонь",
+        "color": "linear-gradient(135deg, #fa709a 0%, #fee140 100%)"
+      },
+      "pattern": {
+        "id": "pattern_4",
+        "name": "Кисточка",
+        "symbol": "🎨",
+        "class": "pattern-brush"
+      },
+      "activated_at": "2026-03-31T21:18:20.851401",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "legendary",
+        "pattern": "legendary"
+      }
+    },
+    {
+      "id": 38,
+      "owner": "artgrambank",
+      "gift_id": "1774981123.27923",
+      "model": {
+        "id": "crown",
+        "name": "Корона",
+        "value": 500,
+        "rarity": "legendary",
+        "icon": "👑"
+      },
+      "background": {
+        "id": "bg_5",
+        "name": "Огонь",
+        "color": "linear-gradient(135deg, #fa709a 0%, #fee140 100%)"
+      },
+      "pattern": {
+        "id": "pattern_5",
+        "name": "Круг",
+        "symbol": "●",
+        "class": "pattern-circle"
+      },
+      "activated_at": "2026-03-31T21:19:08.839603",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "legendary",
+        "pattern": "rare"
+      },
+      "transfer_history": [
+        {
+          "from": "artem",
+          "to": "artgrambank",
+          "date": "2026-04-01T21:33:24.608123"
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "owner": "artgrambank",
+      "gift_id": "1775023915.625995",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_2",
+        "name": "Мята",
+        "color": "linear-gradient(135deg, #56ccf2 0%, #7ef9d4 100%)",
+        "rarity": "rare"
+      },
+      "pattern": {
+        "id": "balloon_pattern_1",
+        "name": "Звёзды",
+        "symbol": "✦",
+        "class": "pattern-stars"
+      },
+      "activated_at": "2026-04-01T09:12:32.184547",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "rare",
+        "pattern": "legendary"
+      },
+      "transfer_history": [
+        {
+          "from": "artem",
+          "to": "artgrambank",
+          "date": "2026-04-01T21:33:30.640700"
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "owner": "artgrambank",
+      "gift_id": "1775023917.286137",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_1",
+        "name": "Закат",
+        "color": "linear-gradient(135deg, #ff9a56 0%, #ffc470 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "balloon_pattern_1",
+        "name": "Звёзды",
+        "symbol": "✦",
+        "class": "pattern-stars"
+      },
+      "activated_at": "2026-04-01T09:13:21.446535",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "common",
+        "pattern": "legendary"
+      },
+      "transfer_history": [
+        {
+          "from": "artem",
+          "to": "artgrambank",
+          "date": "2026-04-01T21:33:27.274622"
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "owner": "artem",
+      "gift_id": "1775023919.499275",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_2",
+        "name": "Мята",
+        "color": "linear-gradient(135deg, #56ccf2 0%, #7ef9d4 100%)",
+        "rarity": "rare"
+      },
+      "pattern": {
+        "id": "balloon_pattern_1",
+        "name": "Звёзды",
+        "symbol": "✦",
+        "class": "pattern-stars"
+      },
+      "activated_at": "2026-04-01T09:13:29.888033",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "rare",
+        "pattern": "common"
+      }
+    },
+    {
+      "id": 42,
+      "owner": "artgrambank",
+      "gift_id": "1775024016.463062",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_2",
+        "name": "Мята",
+        "color": "linear-gradient(135deg, #56ccf2 0%, #7ef9d4 100%)",
+        "rarity": "rare"
+      },
+      "pattern": {
+        "id": "balloon_pattern_2",
+        "name": "Волны",
+        "symbol": "〰",
+        "class": "pattern-waves"
+      },
+      "activated_at": "2026-04-01T09:14:18.512123",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "rare",
+        "pattern": "rare"
+      },
+      "transfer_history": [
+        {
+          "from": "artem",
+          "to": "artgrambank",
+          "date": "2026-04-01T21:33:20.397164"
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "owner": "chap1a",
+      "gift_id": "1775024017.915749",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_2",
+        "name": "Мята",
+        "color": "linear-gradient(135deg, #56ccf2 0%, #7ef9d4 100%)",
+        "rarity": "rare"
+      },
+      "pattern": {
+        "id": "balloon_pattern_1",
+        "name": "Звёзды",
+        "symbol": "✦",
+        "class": "pattern-stars"
+      },
+      "activated_at": "2026-04-01T09:14:26.806798",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "rare",
+        "pattern": "legendary"
+      },
+      "transfer_history": [
+        {
+          "from": "artem",
+          "to": "chap1a",
+          "date": "2026-04-01T09:14:47.663276"
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "owner": "artgrambank",
+      "gift_id": "1775024823.262817",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_2",
+        "name": "Мята",
+        "color": "linear-gradient(135deg, #56ccf2 0%, #7ef9d4 100%)",
+        "rarity": "rare"
+      },
+      "pattern": {
+        "id": "balloon_pattern_3",
+        "name": "Искры",
+        "symbol": "✧",
+        "class": "pattern-sparkles"
+      },
+      "activated_at": "2026-04-01T09:27:26.929934",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "rare",
+        "pattern": "rare"
+      },
+      "transfer_history": [
+        {
+          "from": "artem",
+          "to": "artgrambank",
+          "date": "2026-04-01T21:33:17.891883"
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "owner": "artgrambank",
+      "gift_id": "1775024825.115272",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_2",
+        "name": "Мята",
+        "color": "linear-gradient(135deg, #56ccf2 0%, #7ef9d4 100%)",
+        "rarity": "rare"
+      },
+      "pattern": {
+        "id": "balloon_pattern_3",
+        "name": "Искры",
+        "symbol": "✧",
+        "class": "pattern-sparkles"
+      },
+      "activated_at": "2026-04-01T09:27:37.376516",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "rare",
+        "pattern": "rare"
+      },
+      "transfer_history": [
+        {
+          "from": "artem",
+          "to": "artgrambank",
+          "date": "2026-04-01T21:33:09.757917"
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "owner": "artgrambank",
+      "gift_id": "1775024826.424319",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_1",
+        "name": "Закат",
+        "color": "linear-gradient(135deg, #ff9a56 0%, #ffc470 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "balloon_pattern_3",
+        "name": "Искры",
+        "symbol": "✧",
+        "class": "pattern-sparkles"
+      },
+      "activated_at": "2026-04-01T09:27:48.360486",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "common",
+        "pattern": "legendary"
+      },
+      "transfer_history": [
+        {
+          "from": "artem",
+          "to": "artgrambank",
+          "date": "2026-04-01T21:33:12.352122"
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "owner": "artgrambank",
+      "gift_id": "1775024827.677297",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_2",
+        "name": "Мята",
+        "color": "linear-gradient(135deg, #56ccf2 0%, #7ef9d4 100%)",
+        "rarity": "rare"
+      },
+      "pattern": {
+        "id": "balloon_pattern_1",
+        "name": "Звёзды",
+        "symbol": "✦",
+        "class": "pattern-stars"
+      },
+      "activated_at": "2026-04-01T09:28:39.737921",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "rare",
+        "pattern": "legendary"
+      },
+      "transfer_history": [
+        {
+          "from": "artem",
+          "to": "artgrambank",
+          "date": "2026-04-01T21:33:14.893027"
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "owner": "artgrambank",
+      "gift_id": "1775024829.243734",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_2",
+        "name": "Мята",
+        "color": "linear-gradient(135deg, #56ccf2 0%, #7ef9d4 100%)",
+        "rarity": "rare"
+      },
+      "pattern": {
+        "id": "balloon_pattern_1",
+        "name": "Звёзды",
+        "symbol": "✦",
+        "class": "pattern-stars"
+      },
+      "activated_at": "2026-04-01T09:28:49.395532",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "rare",
+        "pattern": "rare"
+      },
+      "transfer_history": [
+        {
+          "from": "artem",
+          "to": "artgrambank",
+          "date": "2026-04-01T21:33:05.000480"
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "owner": "artgrambank",
+      "gift_id": "1775025403.64683",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_1",
+        "name": "Закат",
+        "color": "linear-gradient(135deg, #ff9a56 0%, #ffc470 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "balloon_pattern_3",
+        "name": "Искры",
+        "symbol": "✧",
+        "class": "pattern-sparkles"
+      },
+      "activated_at": "2026-04-01T09:37:02.374847",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "common",
+        "pattern": "rare"
+      },
+      "transfer_history": [
+        {
+          "from": "artem",
+          "to": "artgrambank",
+          "date": "2026-04-01T21:32:58.703574"
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "owner": "artgrambank",
+      "gift_id": "1775025404.956497",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_1",
+        "name": "Закат",
+        "color": "linear-gradient(135deg, #ff9a56 0%, #ffc470 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "balloon_pattern_1",
+        "name": "Звёзды",
+        "symbol": "✦",
+        "class": "pattern-stars"
+      },
+      "activated_at": "2026-04-01T09:37:11.056207",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "common",
+        "pattern": "common"
+      },
+      "transfer_history": [
+        {
+          "from": "artem",
+          "to": "artgrambank",
+          "date": "2026-04-01T21:33:01.100701"
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "owner": "artem",
+      "gift_id": "1775025406.663622",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_2",
+        "name": "Мята",
+        "color": "linear-gradient(135deg, #56ccf2 0%, #7ef9d4 100%)",
+        "rarity": "rare"
+      },
+      "pattern": {
+        "id": "balloon_pattern_1",
+        "name": "Звёзды",
+        "symbol": "✦",
+        "class": "pattern-stars"
+      },
+      "activated_at": "2026-04-01T09:37:19.735731",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "rare",
+        "pattern": "legendary"
+      }
+    },
+    {
+      "id": 52,
+      "owner": "artgrambank",
+      "gift_id": "1775025408.367977",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_2",
+        "name": "Мята",
+        "color": "linear-gradient(135deg, #56ccf2 0%, #7ef9d4 100%)",
+        "rarity": "rare"
+      },
+      "pattern": {
+        "id": "balloon_pattern_3",
+        "name": "Искры",
+        "symbol": "✧",
+        "class": "pattern-sparkles"
+      },
+      "activated_at": "2026-04-01T09:37:29.210808",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "rare",
+        "pattern": "rare"
+      },
+      "transfer_history": [
+        {
+          "from": "artem",
+          "to": "artgrambank",
+          "date": "2026-04-01T21:32:55.833211"
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "owner": "artem",
+      "gift_id": "1775025461.102986",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_2",
+        "name": "Мята",
+        "color": "linear-gradient(135deg, #56ccf2 0%, #7ef9d4 100%)",
+        "rarity": "rare"
+      },
+      "pattern": {
+        "id": "balloon_pattern_1",
+        "name": "Звёзды",
+        "symbol": "✦",
+        "class": "pattern-stars"
+      },
+      "activated_at": "2026-04-01T09:38:08.370942",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "rare",
+        "pattern": "common"
+      }
+    },
+    {
+      "id": 54,
+      "owner": "chap1a",
+      "gift_id": "1775025469.335778",
+      "model": {
+        "id": "crown",
+        "name": "Корона",
+        "value": 500,
+        "rarity": "legendary",
+        "icon": "👑"
+      },
+      "background": {
+        "id": "bg_3",
+        "name": "Лес",
+        "color": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)"
+      },
+      "pattern": {
+        "id": "pattern_5",
+        "name": "Круг",
+        "symbol": "●",
+        "class": "pattern-circle"
+      },
+      "activated_at": "2026-04-01T09:38:17.119826",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "legendary",
+        "pattern": "legendary"
+      },
+      "transfer_history": [
+        {
+          "from": "artem",
+          "to": "chap1a",
+          "date": "2026-04-01T15:59:39.702433"
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "owner": "chap1a",
+      "gift_id": "1775025471.098739",
+      "model": {
+        "id": "crown",
+        "name": "Корона",
+        "value": 500,
+        "rarity": "legendary",
+        "icon": "👑"
+      },
+      "background": {
+        "id": "bg_5",
+        "name": "Огонь",
+        "color": "linear-gradient(135deg, #fa709a 0%, #fee140 100%)"
+      },
+      "pattern": {
+        "id": "pattern_4",
+        "name": "Кисточка",
+        "symbol": "🎨",
+        "class": "pattern-brush"
+      },
+      "activated_at": "2026-04-01T09:38:26.385018",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "legendary",
+        "pattern": "common"
+      },
+      "transfer_history": [
+        {
+          "from": "artem",
+          "to": "chap1a",
+          "date": "2026-04-01T15:59:36.621220"
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "owner": "chap1a",
+      "gift_id": "1775025472.501799",
+      "model": {
+        "id": "crown",
+        "name": "Корона",
+        "value": 500,
+        "rarity": "legendary",
+        "icon": "👑"
+      },
+      "background": {
+        "id": "bg_3",
+        "name": "Лес",
+        "color": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)"
+      },
+      "pattern": {
+        "id": "pattern_4",
+        "name": "Кисточка",
+        "symbol": "🎨",
+        "class": "pattern-brush"
+      },
+      "activated_at": "2026-04-01T09:38:39.296492",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "legendary",
+        "pattern": "common"
+      },
+      "transfer_history": [
+        {
+          "from": "artem",
+          "to": "chap1a",
+          "date": "2026-04-01T15:59:33.654103"
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "owner": "support",
+      "gift_id": "1775028470.949771",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_1",
+        "name": "Закат",
+        "color": "linear-gradient(135deg, #ff9a56 0%, #ffc470 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "balloon_pattern_3",
+        "name": "Искры",
+        "symbol": "✧",
+        "class": "pattern-sparkles"
+      },
+      "activated_at": "2026-04-01T10:28:36.676468",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "common",
+        "pattern": "rare"
+      }
+    },
+    {
+      "id": 58,
+      "owner": "support",
+      "gift_id": "1775028472.688031",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_2",
+        "name": "Мята",
+        "color": "linear-gradient(135deg, #56ccf2 0%, #7ef9d4 100%)",
+        "rarity": "rare"
+      },
+      "pattern": {
+        "id": "balloon_pattern_2",
+        "name": "Волны",
+        "symbol": "〰",
+        "class": "pattern-waves"
+      },
+      "activated_at": "2026-04-01T10:28:44.913990",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "rare",
+        "pattern": "common"
+      }
+    },
+    {
+      "id": 59,
+      "owner": "support",
+      "gift_id": "1775028474.420481",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_2",
+        "name": "Мята",
+        "color": "linear-gradient(135deg, #56ccf2 0%, #7ef9d4 100%)",
+        "rarity": "rare"
+      },
+      "pattern": {
+        "id": "balloon_pattern_1",
+        "name": "Звёзды",
+        "symbol": "✦",
+        "class": "pattern-stars"
+      },
+      "activated_at": "2026-04-01T10:28:54.578197",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "rare",
+        "pattern": "legendary"
+      }
+    },
+    {
+      "id": 60,
+      "owner": "fiman",
+      "gift_id": "1775047206.323192",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_2",
+        "name": "Мята",
+        "color": "linear-gradient(135deg, #56ccf2 0%, #7ef9d4 100%)",
+        "rarity": "rare"
+      },
+      "pattern": {
+        "id": "balloon_pattern_2",
+        "name": "Волны",
+        "symbol": "〰",
+        "class": "pattern-waves"
+      },
+      "activated_at": "2026-04-01T15:41:31.083895",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "rare",
+        "pattern": "legendary"
+      },
+      "transfer_history": [
+        {
+          "from": "artem",
+          "to": "fiman",
+          "date": "2026-04-01T15:59:29.801447"
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "owner": "fiman",
+      "gift_id": "1775047207.798515",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_2",
+        "name": "Мята",
+        "color": "linear-gradient(135deg, #56ccf2 0%, #7ef9d4 100%)",
+        "rarity": "rare"
+      },
+      "pattern": {
+        "id": "balloon_pattern_2",
+        "name": "Волны",
+        "symbol": "〰",
+        "class": "pattern-waves"
+      },
+      "activated_at": "2026-04-01T15:41:40.875045",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "rare",
+        "pattern": "rare"
+      },
+      "transfer_history": [
+        {
+          "from": "artem",
+          "to": "fiman",
+          "date": "2026-04-01T15:59:25.967230"
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "owner": "artgrambank",
+      "gift_id": "1775047478.459807",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_1",
+        "name": "Закат",
+        "color": "linear-gradient(135deg, #ff9a56 0%, #ffc470 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "balloon_pattern_1",
+        "name": "Звёзды",
+        "symbol": "✦",
+        "class": "pattern-stars"
+      },
+      "activated_at": "2026-04-01T15:44:56.255701",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "common",
+        "pattern": "legendary"
+      },
+      "transfer_history": [
+        {
+          "from": "support",
+          "to": "artem",
+          "date": "2026-04-01T15:45:26.315269"
+        },
+        {
+          "from": "artem",
+          "to": "artgrambank",
+          "date": "2026-04-01T21:32:52.251522"
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "owner": "fiman",
+      "gift_id": "1775047216.853138",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_2",
+        "name": "Мята",
+        "color": "linear-gradient(135deg, #56ccf2 0%, #7ef9d4 100%)",
+        "rarity": "rare"
+      },
+      "pattern": {
+        "id": "balloon_pattern_1",
+        "name": "Звёзды",
+        "symbol": "✦",
+        "class": "pattern-stars"
+      },
+      "activated_at": "2026-04-01T15:45:43.882802",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "rare",
+        "pattern": "legendary"
+      },
+      "transfer_history": [
+        {
+          "from": "artem",
+          "to": "fiman",
+          "date": "2026-04-01T15:59:22.561249"
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "owner": "fiman",
+      "gift_id": "1775023851.095514",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_1",
+        "name": "Закат",
+        "color": "linear-gradient(135deg, #ff9a56 0%, #ffc470 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "balloon_pattern_1",
+        "name": "Звёзды",
+        "symbol": "✦",
+        "class": "pattern-stars"
+      },
+      "activated_at": "2026-04-01T15:47:14.477805",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "common",
+        "pattern": "rare"
+      }
+    },
+    {
+      "id": 65,
+      "owner": "h",
+      "gift_id": "1775048188.361052",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_1",
+        "name": "Закат",
+        "color": "linear-gradient(135deg, #ff9a56 0%, #ffc470 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "balloon_pattern_1",
+        "name": "Звёзды",
+        "symbol": "✦",
+        "class": "pattern-stars"
+      },
+      "activated_at": "2026-04-01T15:56:44.907023",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "common",
+        "pattern": "common"
+      }
+    },
+    {
+      "id": 66,
+      "owner": "kaktak",
+      "gift_id": "1775025179.882325",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_1",
+        "name": "Закат",
+        "color": "linear-gradient(135deg, #ff9a56 0%, #ffc470 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "balloon_pattern_2",
+        "name": "Волны",
+        "symbol": "〰",
+        "class": "pattern-waves"
+      },
+      "activated_at": "2026-04-01T20:29:41.702339",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "common",
+        "pattern": "rare"
+      }
+    },
+    {
+      "id": 67,
+      "owner": "kaktak",
+      "gift_id": "1775025183.489035",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 15000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_3",
+        "name": "Радуга",
+        "color": "linear-gradient(135deg, #ff00cc 0%, #3333ff 25%, #00ccff 50%, #33ff99 75%, #ffcc00 100%)",
+        "rarity": "mythic"
+      },
+      "pattern": {
+        "id": "balloon_pattern_1",
+        "name": "Звёзды",
+        "symbol": "✦",
+        "class": "pattern-stars"
+      },
+      "activated_at": "2026-04-01T20:29:56.664970",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "mythic",
+        "pattern": "common"
+      }
+    },
+    {
+      "id": 68,
+      "owner": "kaktak",
+      "gift_id": "1775025183.921887",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_1",
+        "name": "Закат",
+        "color": "linear-gradient(135deg, #ff9a56 0%, #ffc470 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "balloon_pattern_1",
+        "name": "Звёзды",
+        "symbol": "✦",
+        "class": "pattern-stars"
+      },
+      "activated_at": "2026-04-01T20:30:06.292314",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "common",
+        "pattern": "common"
+      }
+    },
+    {
+      "id": 69,
+      "owner": "kaktak",
+      "gift_id": "1775048176.173922",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_1",
+        "name": "Закат",
+        "color": "linear-gradient(135deg, #ff9a56 0%, #ffc470 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "balloon_pattern_2",
+        "name": "Волны",
+        "symbol": "〰",
+        "class": "pattern-waves"
+      },
+      "activated_at": "2026-04-01T20:30:15.885073",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "common",
+        "pattern": "rare"
+      }
+    },
+    {
+      "id": 70,
+      "owner": "artgrambank",
+      "gift_id": "1775065361.162248",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_2",
+        "name": "Мята",
+        "color": "linear-gradient(135deg, #56ccf2 0%, #7ef9d4 100%)",
+        "rarity": "rare"
+      },
+      "pattern": {
+        "id": "balloon_pattern_1",
+        "name": "Звёзды",
+        "symbol": "✦",
+        "class": "pattern-stars"
+      },
+      "activated_at": "2026-04-01T20:43:12.710610",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "rare",
+        "pattern": "legendary"
+      },
+      "transfer_history": [
+        {
+          "from": "artem",
+          "to": "artgrambank",
+          "date": "2026-04-01T21:32:45.723706"
+        }
+      ]
+    },
+    {
+      "id": 71,
+      "owner": "artem",
+      "gift_id": "1775065362.728559",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_3",
+        "name": "Радуга",
+        "color": "linear-gradient(135deg, #ff00cc 0%, #3333ff 25%, #00ccff 50%, #33ff99 75%, #ffcc00 100%)",
+        "rarity": "mythic"
+      },
+      "pattern": {
+        "id": "balloon_pattern_2",
+        "name": "Волны",
+        "symbol": "〰",
+        "class": "pattern-waves"
+      },
+      "activated_at": "2026-04-01T20:43:22.966251",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "mythic",
+        "pattern": "common"
+      }
+    },
+    {
+      "id": 72,
+      "owner": "artem",
+      "gift_id": "1775065364.210996",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_1",
+        "name": "Закат",
+        "color": "linear-gradient(135deg, #ff9a56 0%, #ffc470 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "balloon_pattern_3",
+        "name": "Искры",
+        "symbol": "✧",
+        "class": "pattern-sparkles"
+      },
+      "activated_at": "2026-04-01T20:44:22.861271",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "common",
+        "pattern": "common"
+      }
+    },
+    {
+      "id": 73,
+      "owner": "artem",
+      "gift_id": "1775068097.432242",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_3",
+        "name": "Радуга",
+        "color": "linear-gradient(135deg, #ff00cc 0%, #3333ff 25%, #00ccff 50%, #33ff99 75%, #ffcc00 100%)",
+        "rarity": "mythic"
+      },
+      "pattern": {
+        "id": "balloon_pattern_2",
+        "name": "Волны",
+        "symbol": "〰",
+        "class": "pattern-waves"
+      },
+      "activated_at": "2026-04-01T21:28:34.248905",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "mythic",
+        "pattern": "rare"
+      }
+    },
+    {
+      "id": 74,
+      "owner": "artgrambank",
+      "gift_id": "1775068523.548295",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_1",
+        "name": "Закат",
+        "color": "linear-gradient(135deg, #ff9a56 0%, #ffc470 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "balloon_pattern_3",
+        "name": "Искры",
+        "symbol": "✧",
+        "class": "pattern-sparkles"
+      },
+      "activated_at": "2026-04-01T21:35:45.240945",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "common",
+        "pattern": "rare"
+      },
+      "transfer_history": [
+        {
+          "from": "artem",
+          "to": "artgrambank",
+          "date": "2026-04-01T21:36:33.209661"
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "owner": "artgrambank",
+      "gift_id": "1775068528.599594",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_2",
+        "name": "Мята",
+        "color": "linear-gradient(135deg, #56ccf2 0%, #7ef9d4 100%)",
+        "rarity": "rare"
+      },
+      "pattern": {
+        "id": "balloon_pattern_3",
+        "name": "Искры",
+        "symbol": "✧",
+        "class": "pattern-sparkles"
+      },
+      "activated_at": "2026-04-01T21:35:53.881065",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "rare",
+        "pattern": "rare"
+      },
+      "transfer_history": [
+        {
+          "from": "artem",
+          "to": "artgrambank",
+          "date": "2026-04-01T21:36:35.616699"
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "owner": "artgrambank",
+      "gift_id": "1775068527.098768",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_2",
+        "name": "Мята",
+        "color": "linear-gradient(135deg, #56ccf2 0%, #7ef9d4 100%)",
+        "rarity": "rare"
+      },
+      "pattern": {
+        "id": "balloon_pattern_2",
+        "name": "Волны",
+        "symbol": "〰",
+        "class": "pattern-waves"
+      },
+      "activated_at": "2026-04-01T21:36:03.501246",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "rare",
+        "pattern": "legendary"
+      },
+      "transfer_history": [
+        {
+          "from": "artem",
+          "to": "artgrambank",
+          "date": "2026-04-01T21:36:30.787468"
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "owner": "artgrambank",
+      "gift_id": "1775068525.393081",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_1",
+        "name": "Закат",
+        "color": "linear-gradient(135deg, #ff9a56 0%, #ffc470 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "balloon_pattern_1",
+        "name": "Звёзды",
+        "symbol": "✦",
+        "class": "pattern-stars"
+      },
+      "activated_at": "2026-04-01T21:36:11.711709",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "common",
+        "pattern": "rare"
+      },
+      "transfer_history": [
+        {
+          "from": "artem",
+          "to": "artgrambank",
+          "date": "2026-04-01T21:36:38.784278"
+        }
+      ]
+    },
+    {
+      "id": 78,
+      "owner": "artgrambank",
+      "gift_id": "1775068529.997817",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_2",
+        "name": "Мята",
+        "color": "linear-gradient(135deg, #56ccf2 0%, #7ef9d4 100%)",
+        "rarity": "rare"
+      },
+      "pattern": {
+        "id": "balloon_pattern_3",
+        "name": "Искры",
+        "symbol": "✧",
+        "class": "pattern-sparkles"
+      },
+      "activated_at": "2026-04-01T21:36:22.128083",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "rare",
+        "pattern": "legendary"
+      },
+      "transfer_history": [
+        {
+          "from": "artem",
+          "to": "artgrambank",
+          "date": "2026-04-01T21:36:42.155759"
+        },
+        {
+          "from": "artem",
+          "to": "artgrambank",
+          "date": "2026-04-01T21:36:42.215763"
+        }
+      ]
+    },
+    {
+      "id": 79,
+      "owner": "artem",
+      "gift_id": "1775068610.041733",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_3",
+        "name": "Радуга",
+        "color": "linear-gradient(135deg, #ff00cc 0%, #3333ff 25%, #00ccff 50%, #33ff99 75%, #ffcc00 100%)",
+        "rarity": "mythic"
+      },
+      "pattern": {
+        "id": "balloon_pattern_2",
+        "name": "Волны",
+        "symbol": "〰",
+        "class": "pattern-waves"
+      },
+      "activated_at": "2026-04-01T21:37:08.214774",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "mythic",
+        "pattern": "legendary"
+      }
+    },
+    {
+      "id": 80,
+      "owner": "artgrambank",
+      "gift_id": "1775068700.614262",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_3",
+        "name": "Радуга",
+        "color": "linear-gradient(135deg, #ff00cc 0%, #3333ff 25%, #00ccff 50%, #33ff99 75%, #ffcc00 100%)",
+        "rarity": "mythic"
+      },
+      "pattern": {
+        "id": "balloon_pattern_2",
+        "name": "Волны",
+        "symbol": "〰",
+        "class": "pattern-waves"
+      },
+      "activated_at": "2026-04-01T21:39:07.126905",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "mythic",
+        "pattern": "common"
+      }
+    },
+    {
+      "id": 81,
+      "owner": "artgrambank",
+      "gift_id": "1775068702.443992",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_1",
+        "name": "Закат",
+        "color": "linear-gradient(135deg, #ff9a56 0%, #ffc470 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "balloon_pattern_2",
+        "name": "Волны",
+        "symbol": "〰",
+        "class": "pattern-waves"
+      },
+      "activated_at": "2026-04-01T21:39:16.798520",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "common",
+        "pattern": "legendary"
+      }
+    },
+    {
+      "id": 82,
+      "owner": "artgrambank",
+      "gift_id": "1775068704.328785",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_3",
+        "name": "Радуга",
+        "color": "linear-gradient(135deg, #ff00cc 0%, #3333ff 25%, #00ccff 50%, #33ff99 75%, #ffcc00 100%)",
+        "rarity": "mythic"
+      },
+      "pattern": {
+        "id": "balloon_pattern_1",
+        "name": "Звёзды",
+        "symbol": "✦",
+        "class": "pattern-stars"
+      },
+      "activated_at": "2026-04-01T21:39:24.985811",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "mythic",
+        "pattern": "common"
+      }
+    },
+    {
+      "id": 83,
+      "owner": "artgrambank",
+      "gift_id": "1775068784.153333",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_1",
+        "name": "Закат",
+        "color": "linear-gradient(135deg, #ff9a56 0%, #ffc470 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "balloon_pattern_1",
+        "name": "Звёзды",
+        "symbol": "✦",
+        "class": "pattern-stars"
+      },
+      "activated_at": "2026-04-01T21:40:01.083203",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "common",
+        "pattern": "rare"
+      }
+    },
+    {
+      "id": 84,
+      "owner": "levchik",
+      "gift_id": "1775069040.676614",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_3",
+        "name": "Радуга",
+        "color": "linear-gradient(135deg, #ff00cc 0%, #3333ff 25%, #00ccff 50%, #33ff99 75%, #ffcc00 100%)",
+        "rarity": "mythic"
+      },
+      "pattern": {
+        "id": "balloon_pattern_3",
+        "name": "Искры",
+        "symbol": "✧",
+        "class": "pattern-sparkles"
+      },
+      "activated_at": "2026-04-01T21:44:21.715385",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "mythic",
+        "pattern": "rare"
+      }
+    },
+    {
+      "id": 85,
+      "owner": "artgrambank",
+      "gift_id": "1775069042.454262",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_1",
+        "name": "Закат",
+        "color": "linear-gradient(135deg, #ff9a56 0%, #ffc470 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "balloon_pattern_2",
+        "name": "Волны",
+        "symbol": "〰",
+        "class": "pattern-waves"
+      },
+      "activated_at": "2026-04-01T21:44:33.885104",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "common",
+        "pattern": "common"
+      },
+      "transfer_history": [
+        {
+          "from": "levchik",
+          "to": "artgrambank",
+          "date": "2026-04-01T21:45:04.277098"
+        }
+      ]
+    },
+    {
+      "id": 86,
+      "owner": "artgrambank",
+      "gift_id": "1775069043.949672",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_1",
+        "name": "Закат",
+        "color": "linear-gradient(135deg, #ff9a56 0%, #ffc470 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "balloon_pattern_3",
+        "name": "Искры",
+        "symbol": "✧",
+        "class": "pattern-sparkles"
+      },
+      "activated_at": "2026-04-01T21:44:42.324415",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "common",
+        "pattern": "rare"
+      },
+      "transfer_history": [
+        {
+          "from": "levchik",
+          "to": "artgrambank",
+          "date": "2026-04-01T21:45:07.283910"
+        }
+      ]
+    },
+    {
+      "id": 87,
+      "owner": "artgrambank",
+      "gift_id": "1775069132.90793",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_1",
+        "name": "Закат",
+        "color": "linear-gradient(135deg, #ff9a56 0%, #ffc470 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "balloon_pattern_2",
+        "name": "Волны",
+        "symbol": "〰",
+        "class": "pattern-waves"
+      },
+      "activated_at": "2026-04-01T21:45:58.706375",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "common",
+        "pattern": "rare"
+      },
+      "transfer_history": [
+        {
+          "from": "levchik",
+          "to": "artgrambank",
+          "date": "2026-04-01T21:46:20.911654"
+        }
+      ]
+    },
+    {
+      "id": 88,
+      "owner": "artgrambank",
+      "gift_id": "1775069134.553938",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_1",
+        "name": "Закат",
+        "color": "linear-gradient(135deg, #ff9a56 0%, #ffc470 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "balloon_pattern_1",
+        "name": "Звёзды",
+        "symbol": "✦",
+        "class": "pattern-stars"
+      },
+      "activated_at": "2026-04-01T21:46:07.331163",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "common",
+        "pattern": "common"
+      },
+      "transfer_history": [
+        {
+          "from": "levchik",
+          "to": "artgrambank",
+          "date": "2026-04-01T21:46:24.032017"
+        }
+      ]
+    },
+    {
+      "id": 89,
+      "owner": "artgrambank",
+      "gift_id": "1775069216.519422",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_1",
+        "name": "Закат",
+        "color": "linear-gradient(135deg, #ff9a56 0%, #ffc470 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "balloon_pattern_2",
+        "name": "Волны",
+        "symbol": "〰",
+        "class": "pattern-waves"
+      },
+      "activated_at": "2026-04-01T21:49:25.678822",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "common",
+        "pattern": "rare"
+      },
+      "transfer_history": [
+        {
+          "from": "levchik",
+          "to": "artgrambank",
+          "date": "2026-04-01T21:50:02.645575"
+        }
+      ]
+    },
+    {
+      "id": 90,
+      "owner": "artgrambank",
+      "gift_id": "1775069329.039087",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_2",
+        "name": "Мята",
+        "color": "linear-gradient(135deg, #56ccf2 0%, #7ef9d4 100%)",
+        "rarity": "rare"
+      },
+      "pattern": {
+        "id": "balloon_pattern_1",
+        "name": "Звёзды",
+        "symbol": "✦",
+        "class": "pattern-stars"
+      },
+      "activated_at": "2026-04-01T21:49:33.742107",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "rare",
+        "pattern": "legendary"
+      },
+      "transfer_history": [
+        {
+          "from": "levchik",
+          "to": "artgrambank",
+          "date": "2026-04-01T21:51:40.975794"
+        }
+      ]
+    },
+    {
+      "id": 91,
+      "owner": "artgrambank",
+      "gift_id": "1775069330.500081",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_2",
+        "name": "Мята",
+        "color": "linear-gradient(135deg, #56ccf2 0%, #7ef9d4 100%)",
+        "rarity": "rare"
+      },
+      "pattern": {
+        "id": "balloon_pattern_1",
+        "name": "Звёзды",
+        "symbol": "✦",
+        "class": "pattern-stars"
+      },
+      "activated_at": "2026-04-01T21:49:42.432021",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "rare",
+        "pattern": "common"
+      },
+      "transfer_history": [
+        {
+          "from": "levchik",
+          "to": "artgrambank",
+          "date": "2026-04-01T21:51:43.080302"
+        }
+      ]
+    },
+    {
+      "id": 92,
+      "owner": "artgrambank",
+      "gift_id": "1775069332.288566",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_2",
+        "name": "Мята",
+        "color": "linear-gradient(135deg, #56ccf2 0%, #7ef9d4 100%)",
+        "rarity": "rare"
+      },
+      "pattern": {
+        "id": "balloon_pattern_2",
+        "name": "Волны",
+        "symbol": "〰",
+        "class": "pattern-waves"
+      },
+      "activated_at": "2026-04-01T21:49:52.327639",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "rare",
+        "pattern": "common"
+      },
+      "transfer_history": [
+        {
+          "from": "levchik",
+          "to": "artgrambank",
+          "date": "2026-04-01T21:51:45.011624"
+        }
+      ]
+    },
+    {
+      "id": 93,
+      "owner": "artgrambank",
+      "gift_id": "1775069411.166619",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_1",
+        "name": "Закат",
+        "color": "linear-gradient(135deg, #ff9a56 0%, #ffc470 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "balloon_pattern_1",
+        "name": "Звёзды",
+        "symbol": "✦",
+        "class": "pattern-stars"
+      },
+      "activated_at": "2026-04-01T21:50:48.976848",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "common",
+        "pattern": "legendary"
+      },
+      "transfer_history": [
+        {
+          "from": "levchik",
+          "to": "artgrambank",
+          "date": "2026-04-01T21:51:36.127221"
+        }
+      ]
+    },
+    {
+      "id": 94,
+      "owner": "artgrambank",
+      "gift_id": "1775069412.598756",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_1",
+        "name": "Закат",
+        "color": "linear-gradient(135deg, #ff9a56 0%, #ffc470 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "balloon_pattern_3",
+        "name": "Искры",
+        "symbol": "✧",
+        "class": "pattern-sparkles"
+      },
+      "activated_at": "2026-04-01T21:50:58.294526",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "common",
+        "pattern": "common"
+      },
+      "transfer_history": [
+        {
+          "from": "levchik",
+          "to": "artgrambank",
+          "date": "2026-04-01T21:51:38.572568"
+        }
+      ]
+    },
+    {
+      "id": 95,
+      "owner": "artgrambank",
+      "gift_id": "1775069414.286806",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_1",
+        "name": "Закат",
+        "color": "linear-gradient(135deg, #ff9a56 0%, #ffc470 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "balloon_pattern_1",
+        "name": "Звёзды",
+        "symbol": "✦",
+        "class": "pattern-stars"
+      },
+      "activated_at": "2026-04-01T21:51:08.940475",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "common",
+        "pattern": "legendary"
+      },
+      "transfer_history": [
+        {
+          "from": "levchik",
+          "to": "artgrambank",
+          "date": "2026-04-01T21:51:47.164405"
+        }
+      ]
+    },
+    {
+      "id": 96,
+      "owner": "artgrambank",
+      "gift_id": "1775069415.743616",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_2",
+        "name": "Мята",
+        "color": "linear-gradient(135deg, #56ccf2 0%, #7ef9d4 100%)",
+        "rarity": "rare"
+      },
+      "pattern": {
+        "id": "balloon_pattern_2",
+        "name": "Волны",
+        "symbol": "〰",
+        "class": "pattern-waves"
+      },
+      "activated_at": "2026-04-01T21:51:18.579822",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "rare",
+        "pattern": "rare"
+      },
+      "transfer_history": [
+        {
+          "from": "levchik",
+          "to": "artgrambank",
+          "date": "2026-04-01T21:51:49.413901"
+        }
+      ]
+    },
+    {
+      "id": 97,
+      "owner": "artgrambank",
+      "gift_id": "1775069417.354849",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_1",
+        "name": "Закат",
+        "color": "linear-gradient(135deg, #ff9a56 0%, #ffc470 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "balloon_pattern_1",
+        "name": "Звёзды",
+        "symbol": "✦",
+        "class": "pattern-stars"
+      },
+      "activated_at": "2026-04-01T21:51:27.460053",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "common",
+        "pattern": "common"
+      },
+      "transfer_history": [
+        {
+          "from": "levchik",
+          "to": "artgrambank",
+          "date": "2026-04-01T21:51:52.678543"
+        }
+      ]
+    },
+    {
+      "id": 98,
+      "owner": "artgrambank",
+      "gift_id": "1775069536.570099",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_1",
+        "name": "Закат",
+        "color": "linear-gradient(135deg, #ff9a56 0%, #ffc470 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "balloon_pattern_3",
+        "name": "Искры",
+        "symbol": "✧",
+        "class": "pattern-sparkles"
+      },
+      "activated_at": "2026-04-01T21:52:51.695774",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "common",
+        "pattern": "rare"
+      },
+      "transfer_history": [
+        {
+          "from": "levchik",
+          "to": "artgrambank",
+          "date": "2026-04-01T21:54:24.547185"
+        }
+      ]
+    },
+    {
+      "id": 99,
+      "owner": "artem",
+      "gift_id": "1775069538.035745",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_2",
+        "name": "Мята",
+        "color": "linear-gradient(135deg, #56ccf2 0%, #7ef9d4 100%)",
+        "rarity": "rare"
+      },
+      "pattern": {
+        "id": "balloon_pattern_2",
+        "name": "Волны",
+        "symbol": "〰",
+        "class": "pattern-waves"
+      },
+      "activated_at": "2026-04-01T21:53:03.960985",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "rare",
+        "pattern": "rare"
+      },
+      "transfer_history": [
+        {
+          "from": "levchik",
+          "to": "artem",
+          "date": "2026-04-01T21:54:31.159908"
+        }
+      ]
+    },
+    {
+      "id": 100,
+      "owner": "artem",
+      "gift_id": "1775069548.193633",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_2",
+        "name": "Мята",
+        "color": "linear-gradient(135deg, #56ccf2 0%, #7ef9d4 100%)",
+        "rarity": "rare"
+      },
+      "pattern": {
+        "id": "balloon_pattern_1",
+        "name": "Звёзды",
+        "symbol": "✦",
+        "class": "pattern-stars"
+      },
+      "activated_at": "2026-04-01T21:53:13.485883",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "rare",
+        "pattern": "legendary"
+      },
+      "transfer_history": [
+        {
+          "from": "levchik",
+          "to": "artem",
+          "date": "2026-04-01T21:54:35.850638"
+        }
+      ]
+    },
+    {
+      "id": 101,
+      "owner": "artem",
+      "gift_id": "1775069550.342874",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_2",
+        "name": "Мята",
+        "color": "linear-gradient(135deg, #56ccf2 0%, #7ef9d4 100%)",
+        "rarity": "rare"
+      },
+      "pattern": {
+        "id": "balloon_pattern_1",
+        "name": "Звёзды",
+        "symbol": "✦",
+        "class": "pattern-stars"
+      },
+      "activated_at": "2026-04-01T21:53:25.704181",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "rare",
+        "pattern": "legendary"
+      },
+      "transfer_history": [
+        {
+          "from": "levchik",
+          "to": "artem",
+          "date": "2026-04-01T21:54:40.150722"
+        }
+      ]
+    },
+    {
+      "id": 102,
+      "owner": "artgrambank",
+      "gift_id": "1775069551.733092",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_2",
+        "name": "Мята",
+        "color": "linear-gradient(135deg, #56ccf2 0%, #7ef9d4 100%)",
+        "rarity": "rare"
+      },
+      "pattern": {
+        "id": "balloon_pattern_2",
+        "name": "Волны",
+        "symbol": "〰",
+        "class": "pattern-waves"
+      },
+      "activated_at": "2026-04-01T21:53:35.493998",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "rare",
+        "pattern": "legendary"
+      },
+      "transfer_history": [
+        {
+          "from": "levchik",
+          "to": "artgrambank",
+          "date": "2026-04-01T21:54:42.760127"
+        }
+      ]
+    },
+    {
+      "id": 103,
+      "owner": "artgrambank",
+      "gift_id": "1775069553.395424",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_1",
+        "name": "Закат",
+        "color": "linear-gradient(135deg, #ff9a56 0%, #ffc470 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "balloon_pattern_1",
+        "name": "Звёзды",
+        "symbol": "✦",
+        "class": "pattern-stars"
+      },
+      "activated_at": "2026-04-01T21:53:47.219985",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "common",
+        "pattern": "legendary"
+      },
+      "transfer_history": [
+        {
+          "from": "levchik",
+          "to": "artgrambank",
+          "date": "2026-04-01T21:54:45.352889"
+        }
+      ]
+    },
+    {
+      "id": 104,
+      "owner": "artgrambank",
+      "gift_id": "1775069554.843812",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_2",
+        "name": "Мята",
+        "color": "linear-gradient(135deg, #56ccf2 0%, #7ef9d4 100%)",
+        "rarity": "rare"
+      },
+      "pattern": {
+        "id": "balloon_pattern_3",
+        "name": "Искры",
+        "symbol": "✧",
+        "class": "pattern-sparkles"
+      },
+      "activated_at": "2026-04-01T21:53:59.084661",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "rare",
+        "pattern": "rare"
+      },
+      "transfer_history": [
+        {
+          "from": "levchik",
+          "to": "artgrambank",
+          "date": "2026-04-01T21:54:48.162469"
+        }
+      ]
+    },
+    {
+      "id": 105,
+      "owner": "artgrambank",
+      "gift_id": "1775069556.636311",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_1",
+        "name": "Закат",
+        "color": "linear-gradient(135deg, #ff9a56 0%, #ffc470 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "balloon_pattern_3",
+        "name": "Искры",
+        "symbol": "✧",
+        "class": "pattern-sparkles"
+      },
+      "activated_at": "2026-04-01T21:54:08.133586",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "common",
+        "pattern": "legendary"
+      },
+      "transfer_history": [
+        {
+          "from": "levchik",
+          "to": "artgrambank",
+          "date": "2026-04-01T21:54:50.908124"
+        }
+      ]
+    },
+    {
+      "id": 106,
+      "owner": "artgrambank",
+      "gift_id": "1775069699.292439",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_1",
+        "name": "Закат",
+        "color": "linear-gradient(135deg, #ff9a56 0%, #ffc470 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "balloon_pattern_1",
+        "name": "Звёзды",
+        "symbol": "✦",
+        "class": "pattern-stars"
+      },
+      "activated_at": "2026-04-01T21:55:24.438729",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "common",
+        "pattern": "common"
+      },
+      "transfer_history": [
+        {
+          "from": "levchik",
+          "to": "artgrambank",
+          "date": "2026-04-01T21:56:25.886489"
+        }
+      ]
+    },
+    {
+      "id": 107,
+      "owner": "artgrambank",
+      "gift_id": "1775069701.326545",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_1",
+        "name": "Закат",
+        "color": "linear-gradient(135deg, #ff9a56 0%, #ffc470 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "balloon_pattern_3",
+        "name": "Искры",
+        "symbol": "✧",
+        "class": "pattern-sparkles"
+      },
+      "activated_at": "2026-04-01T21:55:32.490341",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "common",
+        "pattern": "legendary"
+      },
+      "transfer_history": [
+        {
+          "from": "levchik",
+          "to": "artgrambank",
+          "date": "2026-04-01T21:56:28.965812"
+        }
+      ]
+    },
+    {
+      "id": 108,
+      "owner": "levchik",
+      "gift_id": "1775069703.546783",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_3",
+        "name": "Радуга",
+        "color": "linear-gradient(135deg, #ff00cc 0%, #3333ff 25%, #00ccff 50%, #33ff99 75%, #ffcc00 100%)",
+        "rarity": "mythic"
+      },
+      "pattern": {
+        "id": "balloon_pattern_1",
+        "name": "Звёзды",
+        "symbol": "✦",
+        "class": "pattern-stars"
+      },
+      "activated_at": "2026-04-01T21:55:42.062429",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "mythic",
+        "pattern": "legendary"
+      }
+    },
+    {
+      "id": 109,
+      "owner": "artgrambank",
+      "gift_id": "1775069705.261909",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_2",
+        "name": "Мята",
+        "color": "linear-gradient(135deg, #56ccf2 0%, #7ef9d4 100%)",
+        "rarity": "rare"
+      },
+      "pattern": {
+        "id": "balloon_pattern_2",
+        "name": "Волны",
+        "symbol": "〰",
+        "class": "pattern-waves"
+      },
+      "activated_at": "2026-04-01T21:56:16.026123",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "rare",
+        "pattern": "common"
+      },
+      "transfer_history": [
+        {
+          "from": "levchik",
+          "to": "artgrambank",
+          "date": "2026-04-01T21:56:32.975210"
+        }
+      ]
+    },
+    {
+      "id": 110,
+      "owner": "artgrambank",
+      "gift_id": "1775069821.049016",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_2",
+        "name": "Мята",
+        "color": "linear-gradient(135deg, #56ccf2 0%, #7ef9d4 100%)",
+        "rarity": "rare"
+      },
+      "pattern": {
+        "id": "balloon_pattern_2",
+        "name": "Волны",
+        "symbol": "〰",
+        "class": "pattern-waves"
+      },
+      "activated_at": "2026-04-01T21:57:17.454952",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "rare",
+        "pattern": "rare"
+      },
+      "transfer_history": [
+        {
+          "from": "levchik",
+          "to": "artgrambank",
+          "date": "2026-04-01T21:57:46.989475"
+        }
+      ]
+    },
+    {
+      "id": 111,
+      "owner": "artgrambank",
+      "gift_id": "1775069822.324759",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_1",
+        "name": "Закат",
+        "color": "linear-gradient(135deg, #ff9a56 0%, #ffc470 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "balloon_pattern_3",
+        "name": "Искры",
+        "symbol": "✧",
+        "class": "pattern-sparkles"
+      },
+      "activated_at": "2026-04-01T21:57:28.464426",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "common",
+        "pattern": "rare"
+      },
+      "transfer_history": [
+        {
+          "from": "levchik",
+          "to": "artgrambank",
+          "date": "2026-04-01T21:57:52.461112"
+        }
+      ]
+    },
+    {
+      "id": 112,
+      "owner": "artgrambank",
+      "gift_id": "1775069823.859471",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_2",
+        "name": "Мята",
+        "color": "linear-gradient(135deg, #56ccf2 0%, #7ef9d4 100%)",
+        "rarity": "rare"
+      },
+      "pattern": {
+        "id": "balloon_pattern_3",
+        "name": "Искры",
+        "symbol": "✧",
+        "class": "pattern-sparkles"
+      },
+      "activated_at": "2026-04-01T21:57:37.561990",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "rare",
+        "pattern": "legendary"
+      },
+      "transfer_history": [
+        {
+          "from": "levchik",
+          "to": "artgrambank",
+          "date": "2026-04-01T21:57:49.818342"
+        }
+      ]
+    },
+    {
+      "id": 113,
+      "owner": "levchik",
+      "gift_id": "1775069877.953457",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_3",
+        "name": "Радуга",
+        "color": "linear-gradient(135deg, #ff00cc 0%, #3333ff 25%, #00ccff 50%, #33ff99 75%, #ffcc00 100%)",
+        "rarity": "mythic"
+      },
+      "pattern": {
+        "id": "balloon_pattern_1",
+        "name": "Звёзды",
+        "symbol": "✦",
+        "class": "pattern-stars"
+      },
+      "activated_at": "2026-04-01T21:58:23.868494",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "mythic",
+        "pattern": "rare"
+      }
+    },
+    {
+      "id": 114,
+      "owner": "artgrambank",
+      "gift_id": "1775069879.471657",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_2",
+        "name": "Мята",
+        "color": "linear-gradient(135deg, #56ccf2 0%, #7ef9d4 100%)",
+        "rarity": "rare"
+      },
+      "pattern": {
+        "id": "balloon_pattern_3",
+        "name": "Искры",
+        "symbol": "✧",
+        "class": "pattern-sparkles"
+      },
+      "activated_at": "2026-04-01T21:58:38.210328",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "rare",
+        "pattern": "common"
+      },
+      "transfer_history": [
+        {
+          "from": "levchik",
+          "to": "artgrambank",
+          "date": "2026-04-01T21:59:13.896145"
+        }
+      ]
+    },
+    {
+      "id": 115,
+      "owner": "artgrambank",
+      "gift_id": "1775069881.318576",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_2",
+        "name": "Мята",
+        "color": "linear-gradient(135deg, #56ccf2 0%, #7ef9d4 100%)",
+        "rarity": "rare"
+      },
+      "pattern": {
+        "id": "balloon_pattern_1",
+        "name": "Звёзды",
+        "symbol": "✦",
+        "class": "pattern-stars"
+      },
+      "activated_at": "2026-04-01T21:58:46.224267",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "rare",
+        "pattern": "rare"
+      },
+      "transfer_history": [
+        {
+          "from": "levchik",
+          "to": "artgrambank",
+          "date": "2026-04-01T21:59:15.923817"
+        }
+      ]
+    },
+    {
+      "id": 116,
+      "owner": "artgrambank",
+      "gift_id": "1775069882.793123",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_1",
+        "name": "Закат",
+        "color": "linear-gradient(135deg, #ff9a56 0%, #ffc470 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "balloon_pattern_3",
+        "name": "Искры",
+        "symbol": "✧",
+        "class": "pattern-sparkles"
+      },
+      "activated_at": "2026-04-01T21:58:55.382351",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "common",
+        "pattern": "rare"
+      },
+      "transfer_history": [
+        {
+          "from": "levchik",
+          "to": "artgrambank",
+          "date": "2026-04-01T21:59:17.773020"
+        }
+      ]
+    },
+    {
+      "id": 117,
+      "owner": "artgrambank",
+      "gift_id": "1775069885.037012",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_2",
+        "name": "Мята",
+        "color": "linear-gradient(135deg, #56ccf2 0%, #7ef9d4 100%)",
+        "rarity": "rare"
+      },
+      "pattern": {
+        "id": "balloon_pattern_3",
+        "name": "Искры",
+        "symbol": "✧",
+        "class": "pattern-sparkles"
+      },
+      "activated_at": "2026-04-01T21:59:03.655701",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "rare",
+        "pattern": "legendary"
+      },
+      "transfer_history": [
+        {
+          "from": "levchik",
+          "to": "artgrambank",
+          "date": "2026-04-01T21:59:21.057209"
+        }
+      ]
+    },
+    {
+      "id": 118,
+      "owner": "levchik",
+      "gift_id": "1775069972.089289",
+      "model": {
+        "id": "crown",
+        "name": "Корона",
+        "value": 500,
+        "rarity": "legendary",
+        "icon": "👑"
+      },
+      "background": {
+        "id": "bg_5",
+        "name": "Огонь",
+        "color": "linear-gradient(135deg, #fa709a 0%, #fee140 100%)"
+      },
+      "pattern": {
+        "id": "pattern_1",
+        "name": "Галочка",
+        "symbol": "✓",
+        "class": "pattern-checkmark"
+      },
+      "activated_at": "2026-04-01T21:59:51.034536",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "rare",
+        "pattern": "rare"
+      }
+    },
+    {
+      "id": 119,
+      "owner": "levchik",
+      "gift_id": "1775069973.903181",
+      "model": {
+        "id": "crown",
+        "name": "Корона",
+        "value": 500,
+        "rarity": "legendary",
+        "icon": "👑"
+      },
+      "background": {
+        "id": "bg_5",
+        "name": "Огонь",
+        "color": "linear-gradient(135deg, #fa709a 0%, #fee140 100%)"
+      },
+      "pattern": {
+        "id": "pattern_3",
+        "name": "Птица",
+        "symbol": "🕊",
+        "class": "pattern-bird"
+      },
+      "activated_at": "2026-04-01T22:00:00.870053",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "rare",
+        "pattern": "legendary"
+      }
+    },
+    {
+      "id": 120,
+      "owner": "levchik",
+      "gift_id": "1775069975.770342",
+      "model": {
+        "id": "crown",
+        "name": "Корона",
+        "value": 500,
+        "rarity": "legendary",
+        "icon": "👑"
+      },
+      "background": {
+        "id": "bg_2",
+        "name": "Океан",
+        "color": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)"
+      },
+      "pattern": {
+        "id": "pattern_4",
+        "name": "Кисточка",
+        "symbol": "🎨",
+        "class": "pattern-brush"
+      },
+      "activated_at": "2026-04-01T22:00:08.792243",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "legendary",
+        "pattern": "rare"
+      }
+    },
+    {
+      "id": 121,
+      "owner": "artem",
+      "gift_id": "1775115915.710101",
+      "model": {
+        "id": "planet",
+        "name": "Планета",
+        "value": 2500,
+        "rarity": "ultra-legendary",
+        "icon": "🪐"
+      },
+      "background": {
+        "id": "planet_bg_2",
+        "name": "Огненная буря",
+        "color": "linear-gradient(135deg, #ff416c 0%, #ff4b2b 50%, #ffb347 100%)",
+        "rarity": "rare"
+      },
+      "pattern": {
+        "id": "planet_pattern_2",
+        "name": "Орбита",
+        "symbol": "◎",
+        "class": "pattern-orbit"
+      },
+      "activated_at": "2026-04-02T10:45:35.078700",
+      "rarity_scores": {
+        "model": "ultra-legendary",
+        "background": "rare",
+        "pattern": "common"
+      }
+    },
+    {
+      "id": 122,
+      "owner": "artem",
+      "gift_id": "1775115917.24796",
+      "model": {
+        "id": "planet",
+        "name": "Планета",
+        "value": 2500,
+        "rarity": "ultra-legendary",
+        "icon": "🪐"
+      },
+      "background": {
+        "id": "planet_bg_1",
+        "name": "Ледяной океан",
+        "color": "linear-gradient(135deg, #4facfe 0%, #00a8ff 50%, #00d2ff 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "planet_pattern_3",
+        "name": "Туманность",
+        "symbol": "✦✧",
+        "class": "pattern-nebula"
+      },
+      "activated_at": "2026-04-02T10:45:44.960346",
+      "rarity_scores": {
+        "model": "ultra-legendary",
+        "background": "common",
+        "pattern": "common"
+      }
+    },
+    {
+      "id": 123,
+      "owner": "artem",
+      "gift_id": "1775115918.908846",
+      "model": {
+        "id": "planet",
+        "name": "Планета",
+        "value": 2500,
+        "rarity": "ultra-legendary",
+        "icon": "🪐"
+      },
+      "background": {
+        "id": "planet_bg_1",
+        "name": "Ледяной океан",
+        "color": "linear-gradient(135deg, #4facfe 0%, #00a8ff 50%, #00d2ff 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "planet_pattern_2",
+        "name": "Орбита",
+        "symbol": "◎",
+        "class": "pattern-orbit"
+      },
+      "activated_at": "2026-04-02T10:45:54.327680",
+      "rarity_scores": {
+        "model": "ultra-legendary",
+        "background": "common",
+        "pattern": "rare"
+      }
+    },
+    {
+      "id": 124,
+      "owner": "artgrambank",
+      "gift_id": "1775116532.387267",
+      "model": {
+        "id": "planet",
+        "name": "Планета",
+        "value": 2500,
+        "rarity": "ultra-legendary",
+        "icon": "🪐"
+      },
+      "background": {
+        "id": "planet_bg_1",
+        "name": "Ледяной океан",
+        "color": "linear-gradient(135deg, #4facfe 0%, #00a8ff 50%, #00d2ff 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "planet_pattern_1",
+        "name": "Кольца",
+        "symbol": "◌",
+        "class": "pattern-rings"
+      },
+      "activated_at": "2026-04-02T10:55:50.149650",
+      "rarity_scores": {
+        "model": "ultra-legendary",
+        "background": "common",
+        "pattern": "common"
+      },
+      "transfer_history": [
+        {
+          "from": "artem",
+          "to": "artgrambank",
+          "date": "2026-04-02T11:00:30.760604"
+        }
+      ]
+    },
+    {
+      "id": 125,
+      "owner": "artgrambank",
+      "gift_id": "1775116536.055821",
+      "model": {
+        "id": "planet",
+        "name": "Планета",
+        "value": 2500,
+        "rarity": "ultra-legendary",
+        "icon": "🪐"
+      },
+      "background": {
+        "id": "planet_bg_1",
+        "name": "Ледяной океан",
+        "color": "linear-gradient(135deg, #4facfe 0%, #00a8ff 50%, #00d2ff 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "planet_pattern_3",
+        "name": "Туманность",
+        "symbol": "✦✧",
+        "class": "pattern-nebula"
+      },
+      "activated_at": "2026-04-02T10:55:59.277164",
+      "rarity_scores": {
+        "model": "ultra-legendary",
+        "background": "common",
+        "pattern": "rare"
+      },
+      "transfer_history": [
+        {
+          "from": "artem",
+          "to": "artgrambank",
+          "date": "2026-04-02T11:00:28.431975"
+        }
+      ]
+    },
+    {
+      "id": 126,
+      "owner": "artgrambank",
+      "gift_id": "1775116682.467113",
+      "model": {
+        "id": "planet",
+        "name": "Планета",
+        "value": 2500,
+        "rarity": "ultra-legendary",
+        "icon": "🪐"
+      },
+      "background": {
+        "id": "planet_bg_1",
+        "name": "Ледяной океан",
+        "color": "linear-gradient(135deg, #4facfe 0%, #00a8ff 50%, #00d2ff 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "planet_pattern_2",
+        "name": "Орбита",
+        "symbol": "◎",
+        "class": "pattern-orbit"
+      },
+      "activated_at": "2026-04-02T10:58:18.136904",
+      "rarity_scores": {
+        "model": "ultra-legendary",
+        "background": "common",
+        "pattern": "legendary"
+      },
+      "transfer_history": [
+        {
+          "from": "artem",
+          "to": "artgrambank",
+          "date": "2026-04-02T11:00:26.019042"
+        }
+      ]
+    },
+    {
+      "id": 127,
+      "owner": "artgrambank",
+      "gift_id": "1775116767.508551",
+      "model": {
+        "id": "planet",
+        "name": "Планета",
+        "value": 2500,
+        "rarity": "ultra-legendary",
+        "icon": "🪐"
+      },
+      "background": {
+        "id": "planet_bg_1",
+        "name": "Ледяной океан",
+        "color": "linear-gradient(135deg, #4facfe 0%, #00a8ff 50%, #00d2ff 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "planet_pattern_2",
+        "name": "Орбита",
+        "symbol": "◎",
+        "class": "pattern-orbit"
+      },
+      "activated_at": "2026-04-02T11:00:04.864878",
+      "rarity_scores": {
+        "model": "ultra-legendary",
+        "background": "common",
+        "pattern": "rare"
+      },
+      "transfer_history": [
+        {
+          "from": "artem",
+          "to": "artgrambank",
+          "date": "2026-04-02T11:00:23.592071"
+        }
+      ]
+    },
+    {
+      "id": 128,
+      "owner": "hopi",
+      "gift_id": "1775130009.512004",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_3",
+        "name": "Радуга",
+        "color": "linear-gradient(135deg, #ff00cc 0%, #3333ff 25%, #00ccff 50%, #33ff99 75%, #ffcc00 100%)",
+        "rarity": "mythic"
+      },
+      "pattern": {
+        "id": "balloon_pattern_1",
+        "name": "Звёзды",
+        "symbol": "✦",
+        "class": "pattern-stars"
+      },
+      "activated_at": "2026-04-02T14:40:39.666296",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "mythic",
+        "pattern": "rare"
+      }
+    },
+    {
+      "id": 129,
+      "owner": "hopi",
+      "gift_id": "1775130103.537852",
+      "model": {
+        "id": "planet",
+        "name": "Планета",
+        "value": 2500,
+        "rarity": "ultra-legendary",
+        "icon": "🪐"
+      },
+      "background": {
+        "id": "planet_bg_2",
+        "name": "Огненная буря",
+        "color": "linear-gradient(135deg, #ff416c 0%, #ff4b2b 50%, #ffb347 100%)",
+        "rarity": "rare"
+      },
+      "pattern": {
+        "id": "planet_pattern_3",
+        "name": "Туманность",
+        "symbol": "✦✧",
+        "class": "pattern-nebula"
+      },
+      "activated_at": "2026-04-02T14:42:00.230314",
+      "rarity_scores": {
+        "model": "ultra-legendary",
+        "background": "rare",
+        "pattern": "rare"
+      }
+    },
+    {
+      "id": 130,
+      "owner": "hopi",
+      "gift_id": "1775130105.371485",
+      "model": {
+        "id": "planet",
+        "name": "Планета",
+        "value": 2500,
+        "rarity": "ultra-legendary",
+        "icon": "🪐"
+      },
+      "background": {
+        "id": "planet_bg_2",
+        "name": "Огненная буря",
+        "color": "linear-gradient(135deg, #ff416c 0%, #ff4b2b 50%, #ffb347 100%)",
+        "rarity": "rare"
+      },
+      "pattern": {
+        "id": "planet_pattern_1",
+        "name": "Кольца",
+        "symbol": "◌",
+        "class": "pattern-rings"
+      },
+      "activated_at": "2026-04-02T14:42:09.185210",
+      "rarity_scores": {
+        "model": "ultra-legendary",
+        "background": "rare",
+        "pattern": "rare"
+      }
+    },
+    {
+      "id": 131,
+      "owner": "artem",
+      "gift_id": "1775131540.92845",
+      "model": {
+        "id": "planet",
+        "name": "Планета",
+        "value": 2500,
+        "rarity": "ultra-legendary",
+        "icon": "🪐"
+      },
+      "background": {
+        "id": "planet_bg_1",
+        "name": "Ледяной океан",
+        "color": "linear-gradient(135deg, #4facfe 0%, #00a8ff 50%, #00d2ff 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "planet_pattern_1",
+        "name": "Кольца",
+        "symbol": "◌",
+        "class": "pattern-rings"
+      },
+      "activated_at": "2026-04-02T15:05:54.848641",
+      "rarity_scores": {
+        "model": "ultra-legendary",
+        "background": "common",
+        "pattern": "rare"
+      }
+    },
+    {
+      "id": 132,
+      "owner": "chap1a",
+      "gift_id": "1775131582.849879",
+      "model": {
+        "id": "planet",
+        "name": "Планета",
+        "value": 2500,
+        "rarity": "ultra-legendary",
+        "icon": "🪐"
+      },
+      "background": {
+        "id": "planet_bg_1",
+        "name": "Ледяной океан",
+        "color": "linear-gradient(135deg, #4facfe 0%, #00a8ff 50%, #00d2ff 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "planet_pattern_3",
+        "name": "Туманность",
+        "symbol": "✦✧",
+        "class": "pattern-nebula"
+      },
+      "activated_at": "2026-04-02T15:06:42.481430",
+      "rarity_scores": {
+        "model": "ultra-legendary",
+        "background": "common",
+        "pattern": "legendary"
+      }
+    },
+    {
+      "id": 133,
+      "owner": "chap1a",
+      "gift_id": "1775131584.302785",
+      "model": {
+        "id": "planet",
+        "name": "Планета",
+        "value": 2500,
+        "rarity": "ultra-legendary",
+        "icon": "🪐"
+      },
+      "background": {
+        "id": "planet_bg_1",
+        "name": "Ледяной океан",
+        "color": "linear-gradient(135deg, #4facfe 0%, #00a8ff 50%, #00d2ff 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "planet_pattern_2",
+        "name": "Орбита",
+        "symbol": "◎",
+        "class": "pattern-orbit"
+      },
+      "activated_at": "2026-04-02T15:06:51.523991",
+      "rarity_scores": {
+        "model": "ultra-legendary",
+        "background": "common",
+        "pattern": "legendary"
+      }
+    },
+    {
+      "id": 134,
+      "owner": "chap1a",
+      "gift_id": "1775131585.802075",
+      "model": {
+        "id": "planet",
+        "name": "Планета",
+        "value": 2500,
+        "rarity": "ultra-legendary",
+        "icon": "🪐"
+      },
+      "background": {
+        "id": "planet_bg_2",
+        "name": "Огненная буря",
+        "color": "linear-gradient(135deg, #ff416c 0%, #ff4b2b 50%, #ffb347 100%)",
+        "rarity": "rare"
+      },
+      "pattern": {
+        "id": "planet_pattern_1",
+        "name": "Кольца",
+        "symbol": "◌",
+        "class": "pattern-rings"
+      },
+      "activated_at": "2026-04-02T15:06:59.541133",
+      "rarity_scores": {
+        "model": "ultra-legendary",
+        "background": "rare",
+        "pattern": "rare"
+      }
+    },
+    {
+      "id": 135,
+      "owner": "chap1a",
+      "gift_id": "1775131624.142742",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_1",
+        "name": "Закат",
+        "color": "linear-gradient(135deg, #ff9a56 0%, #ffc470 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "balloon_pattern_3",
+        "name": "Искры",
+        "symbol": "✧",
+        "class": "pattern-sparkles"
+      },
+      "activated_at": "2026-04-02T15:07:33.814192",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "common",
+        "pattern": "rare"
+      }
+    },
+    {
+      "id": 136,
+      "owner": "chap1a",
+      "gift_id": "1775131626.753938",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_1",
+        "name": "Закат",
+        "color": "linear-gradient(135deg, #ff9a56 0%, #ffc470 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "balloon_pattern_1",
+        "name": "Звёзды",
+        "symbol": "✦",
+        "class": "pattern-stars"
+      },
+      "activated_at": "2026-04-02T15:07:42.046744",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "common",
+        "pattern": "rare"
+      }
+    },
+    {
+      "id": 137,
+      "owner": "chap1a",
+      "gift_id": "1775131631.198793",
+      "model": {
+        "id": "crown",
+        "name": "Корона",
+        "value": 500,
+        "rarity": "legendary",
+        "icon": "👑"
+      },
+      "background": {
+        "id": "bg_2",
+        "name": "Океан",
+        "color": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)"
+      },
+      "pattern": {
+        "id": "pattern_5",
+        "name": "Круг",
+        "symbol": "●",
+        "class": "pattern-circle"
+      },
+      "activated_at": "2026-04-02T15:07:51.208598",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "legendary",
+        "pattern": "common"
+      }
+    },
+    {
+      "id": 138,
+      "owner": "chap1a",
+      "gift_id": "1775131632.737339",
+      "model": {
+        "id": "crown",
+        "name": "Корона",
+        "value": 500,
+        "rarity": "legendary",
+        "icon": "👑"
+      },
+      "background": {
+        "id": "bg_2",
+        "name": "Океан",
+        "color": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)"
+      },
+      "pattern": {
+        "id": "pattern_1",
+        "name": "Галочка",
+        "symbol": "✓",
+        "class": "pattern-checkmark"
+      },
+      "activated_at": "2026-04-02T15:07:59.552109",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "rare",
+        "pattern": "common"
+      }
+    },
+    {
+      "id": 139,
+      "owner": "fiman",
+      "gift_id": "1775131764.764765",
+      "model": {
+        "id": "planet",
+        "name": "Планета",
+        "value": 2500,
+        "rarity": "ultra-legendary",
+        "icon": "🪐"
+      },
+      "background": {
+        "id": "planet_bg_1",
+        "name": "Ледяной океан",
+        "color": "linear-gradient(135deg, #4facfe 0%, #00a8ff 50%, #00d2ff 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "planet_pattern_1",
+        "name": "Кольца",
+        "symbol": "◌",
+        "class": "pattern-rings"
+      },
+      "activated_at": "2026-04-02T15:11:16.237952",
+      "rarity_scores": {
+        "model": "ultra-legendary",
+        "background": "common",
+        "pattern": "rare"
+      }
+    },
+    {
+      "id": 140,
+      "owner": "fiman",
+      "gift_id": "1775131766.656805",
+      "model": {
+        "id": "planet",
+        "name": "Планета",
+        "value": 2500,
+        "rarity": "ultra-legendary",
+        "icon": "🪐"
+      },
+      "background": {
+        "id": "planet_bg_3",
+        "name": "Космическая аура",
+        "color": "linear-gradient(135deg, #667eea 0%, #b721ff 25%, #764ba2 50%, #4facfe 75%, #00f2fe 100%)",
+        "rarity": "ultra-rare",
+        "animated": true
+      },
+      "pattern": {
+        "id": "planet_pattern_2",
+        "name": "Орбита",
+        "symbol": "◎",
+        "class": "pattern-orbit"
+      },
+      "activated_at": "2026-04-02T15:11:26.606546",
+      "rarity_scores": {
+        "model": "ultra-legendary",
+        "background": "ultra-rare",
+        "pattern": "common"
+      }
+    },
+    {
+      "id": 141,
+      "owner": "fiman",
+      "gift_id": "1775131780.272483",
+      "model": {
+        "id": "crown",
+        "name": "Корона",
+        "value": 500,
+        "rarity": "legendary",
+        "icon": "👑"
+      },
+      "background": {
+        "id": "bg_5",
+        "name": "Огонь",
+        "color": "linear-gradient(135deg, #fa709a 0%, #fee140 100%)"
+      },
+      "pattern": {
+        "id": "pattern_5",
+        "name": "Круг",
+        "symbol": "●",
+        "class": "pattern-circle"
+      },
+      "activated_at": "2026-04-02T15:12:09.872389",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "legendary",
+        "pattern": "rare"
+      }
+    },
+    {
+      "id": 142,
+      "owner": "fiman",
+      "gift_id": "1775131771.260218",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_1",
+        "name": "Закат",
+        "color": "linear-gradient(135deg, #ff9a56 0%, #ffc470 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "balloon_pattern_1",
+        "name": "Звёзды",
+        "symbol": "✦",
+        "class": "pattern-stars"
+      },
+      "activated_at": "2026-04-02T15:12:18.922420",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "common",
+        "pattern": "legendary"
+      }
+    },
+    {
+      "id": 143,
+      "owner": "fiman",
+      "gift_id": "1775131774.685615",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_1",
+        "name": "Закат",
+        "color": "linear-gradient(135deg, #ff9a56 0%, #ffc470 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "balloon_pattern_3",
+        "name": "Искры",
+        "symbol": "✧",
+        "class": "pattern-sparkles"
+      },
+      "activated_at": "2026-04-02T15:12:27.086524",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "common",
+        "pattern": "rare"
+      }
+    },
+    {
+      "id": 144,
+      "owner": "fiman",
+      "gift_id": "1775131776.788071",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_2",
+        "name": "Мята",
+        "color": "linear-gradient(135deg, #56ccf2 0%, #7ef9d4 100%)",
+        "rarity": "rare"
+      },
+      "pattern": {
+        "id": "balloon_pattern_2",
+        "name": "Волны",
+        "symbol": "〰",
+        "class": "pattern-waves"
+      },
+      "activated_at": "2026-04-02T15:12:35.706054",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "rare",
+        "pattern": "legendary"
+      }
+    },
+    {
+      "id": 145,
+      "owner": "fiman",
+      "gift_id": "1775131785.178377",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_2",
+        "name": "Мята",
+        "color": "linear-gradient(135deg, #56ccf2 0%, #7ef9d4 100%)",
+        "rarity": "rare"
+      },
+      "pattern": {
+        "id": "balloon_pattern_1",
+        "name": "Звёзды",
+        "symbol": "✦",
+        "class": "pattern-stars"
+      },
+      "activated_at": "2026-04-02T15:12:45.012688",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "rare",
+        "pattern": "rare"
+      }
+    },
+    {
+      "id": 146,
+      "owner": "fiman",
+      "gift_id": "1775131791.994979",
+      "model": {
+        "id": "crown",
+        "name": "Корона",
+        "value": 500,
+        "rarity": "legendary",
+        "icon": "👑"
+      },
+      "background": {
+        "id": "bg_5",
+        "name": "Огонь",
+        "color": "linear-gradient(135deg, #fa709a 0%, #fee140 100%)"
+      },
+      "pattern": {
+        "id": "pattern_4",
+        "name": "Кисточка",
+        "symbol": "🎨",
+        "class": "pattern-brush"
+      },
+      "activated_at": "2026-04-02T15:12:53.494548",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "legendary",
+        "pattern": "legendary"
+      }
+    },
+    {
+      "id": 147,
+      "owner": "fiman",
+      "gift_id": "1775131763.201809",
+      "model": {
+        "id": "planet",
+        "name": "Планета",
+        "value": 2500,
+        "rarity": "ultra-legendary",
+        "icon": "🪐"
+      },
+      "background": {
+        "id": "planet_bg_1",
+        "name": "Ледяной океан",
+        "color": "linear-gradient(135deg, #4facfe 0%, #00a8ff 50%, #00d2ff 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "planet_pattern_1",
+        "name": "Кольца",
+        "symbol": "◌",
+        "class": "pattern-rings"
+      },
+      "activated_at": "2026-04-02T15:13:07.439878",
+      "rarity_scores": {
+        "model": "ultra-legendary",
+        "background": "common",
+        "pattern": "rare"
+      }
+    },
+    {
+      "id": 148,
+      "owner": "fiman",
+      "gift_id": "1775131786.677257",
+      "model": {
+        "id": "planet",
+        "name": "Планета",
+        "value": 2500,
+        "rarity": "ultra-legendary",
+        "icon": "🪐"
+      },
+      "background": {
+        "id": "planet_bg_1",
+        "name": "Ледяной океан",
+        "color": "linear-gradient(135deg, #4facfe 0%, #00a8ff 50%, #00d2ff 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "planet_pattern_3",
+        "name": "Туманность",
+        "symbol": "✦✧",
+        "class": "pattern-nebula"
+      },
+      "activated_at": "2026-04-02T15:13:17.857841",
+      "rarity_scores": {
+        "model": "ultra-legendary",
+        "background": "common",
+        "pattern": "common"
+      }
+    },
+    {
+      "id": 149,
+      "owner": "fiman",
+      "gift_id": "1775131788.32712",
+      "model": {
+        "id": "crown",
+        "name": "Корона",
+        "value": 500,
+        "rarity": "legendary",
+        "icon": "👑"
+      },
+      "background": {
+        "id": "bg_4",
+        "name": "Космос",
+        "color": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
+      },
+      "pattern": {
+        "id": "pattern_5",
+        "name": "Круг",
+        "symbol": "●",
+        "class": "pattern-circle"
+      },
+      "activated_at": "2026-04-02T15:13:26.567868",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "common",
+        "pattern": "common"
+      }
+    },
+    {
+      "id": 150,
+      "owner": "artem",
+      "gift_id": "1775132079.559826",
+      "model": {
+        "id": "planet",
+        "name": "Планета",
+        "value": 2500,
+        "rarity": "ultra-legendary",
+        "icon": "🪐"
+      },
+      "background": {
+        "id": "planet_bg_1",
+        "name": "Ледяной океан",
+        "color": "linear-gradient(135deg, #4facfe 0%, #00a8ff 50%, #00d2ff 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "planet_pattern_3",
+        "name": "Туманность",
+        "symbol": "✦✧",
+        "class": "pattern-nebula"
+      },
+      "activated_at": "2026-04-02T15:15:14.723287",
+      "rarity_scores": {
+        "model": "ultra-legendary",
+        "background": "common",
+        "pattern": "common"
+      }
+    },
+    {
+      "id": 151,
+      "owner": "artem",
+      "gift_id": "1775132081.055931",
+      "model": {
+        "id": "planet",
+        "name": "Планета",
+        "value": 2500,
+        "rarity": "ultra-legendary",
+        "icon": "🪐"
+      },
+      "background": {
+        "id": "planet_bg_2",
+        "name": "Огненная буря",
+        "color": "linear-gradient(135deg, #ff416c 0%, #ff4b2b 50%, #ffb347 100%)",
+        "rarity": "rare"
+      },
+      "pattern": {
+        "id": "planet_pattern_1",
+        "name": "Кольца",
+        "symbol": "◌",
+        "class": "pattern-rings"
+      },
+      "activated_at": "2026-04-02T15:15:22.698679",
+      "rarity_scores": {
+        "model": "ultra-legendary",
+        "background": "rare",
+        "pattern": "legendary"
+      }
+    },
+    {
+      "id": 152,
+      "owner": "artem",
+      "gift_id": "1775132082.417615",
+      "model": {
+        "id": "planet",
+        "name": "Планета",
+        "value": 2500,
+        "rarity": "ultra-legendary",
+        "icon": "🪐"
+      },
+      "background": {
+        "id": "planet_bg_2",
+        "name": "Огненная буря",
+        "color": "linear-gradient(135deg, #ff416c 0%, #ff4b2b 50%, #ffb347 100%)",
+        "rarity": "rare"
+      },
+      "pattern": {
+        "id": "planet_pattern_1",
+        "name": "Кольца",
+        "symbol": "◌",
+        "class": "pattern-rings"
+      },
+      "activated_at": "2026-04-02T15:15:30.817261",
+      "rarity_scores": {
+        "model": "ultra-legendary",
+        "background": "rare",
+        "pattern": "common"
+      }
+    },
+    {
+      "id": 153,
+      "owner": "artem",
+      "gift_id": "1775132085.00609",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_3",
+        "name": "Радуга",
+        "color": "linear-gradient(135deg, #ff00cc 0%, #3333ff 25%, #00ccff 50%, #33ff99 75%, #ffcc00 100%)",
+        "rarity": "mythic"
+      },
+      "pattern": {
+        "id": "balloon_pattern_1",
+        "name": "Звёзды",
+        "symbol": "✦",
+        "class": "pattern-stars"
+      },
+      "activated_at": "2026-04-02T15:15:39.324037",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "mythic",
+        "pattern": "rare"
+      }
+    },
+    {
+      "id": 154,
+      "owner": "artem",
+      "gift_id": "1775132083.634545",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_2",
+        "name": "Мята",
+        "color": "linear-gradient(135deg, #56ccf2 0%, #7ef9d4 100%)",
+        "rarity": "rare"
+      },
+      "pattern": {
+        "id": "balloon_pattern_3",
+        "name": "Искры",
+        "symbol": "✧",
+        "class": "pattern-sparkles"
+      },
+      "activated_at": "2026-04-02T15:15:50.744421",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "rare",
+        "pattern": "rare"
+      }
+    },
+    {
+      "id": 155,
+      "owner": "artem",
+      "gift_id": "1775132088.576887",
+      "model": {
+        "id": "planet",
+        "name": "Планета",
+        "value": 2500,
+        "rarity": "ultra-legendary",
+        "icon": "🪐"
+      },
+      "background": {
+        "id": "planet_bg_1",
+        "name": "Ледяной океан",
+        "color": "linear-gradient(135deg, #4facfe 0%, #00a8ff 50%, #00d2ff 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "planet_pattern_2",
+        "name": "Орбита",
+        "symbol": "◎",
+        "class": "pattern-orbit"
+      },
+      "activated_at": "2026-04-02T15:15:59.281599",
+      "rarity_scores": {
+        "model": "ultra-legendary",
+        "background": "common",
+        "pattern": "rare"
+      }
+    },
+    {
+      "id": 156,
+      "owner": "artem",
+      "gift_id": "1775132087.296313",
+      "model": {
+        "id": "planet",
+        "name": "Планета",
+        "value": 2500,
+        "rarity": "ultra-legendary",
+        "icon": "🪐"
+      },
+      "background": {
+        "id": "planet_bg_1",
+        "name": "Ледяной океан",
+        "color": "linear-gradient(135deg, #4facfe 0%, #00a8ff 50%, #00d2ff 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "planet_pattern_2",
+        "name": "Орбита",
+        "symbol": "◎",
+        "class": "pattern-orbit"
+      },
+      "activated_at": "2026-04-02T15:16:11.775925",
+      "rarity_scores": {
+        "model": "ultra-legendary",
+        "background": "common",
+        "pattern": "common"
+      }
+    },
+    {
+      "id": 157,
+      "owner": "artem",
+      "gift_id": "1775132090.602248",
+      "model": {
+        "id": "balloon",
+        "name": "Шар",
+        "value": 1000,
+        "rarity": "legendary",
+        "icon": "🎈"
+      },
+      "background": {
+        "id": "balloon_bg_3",
+        "name": "Радуга",
+        "color": "linear-gradient(135deg, #ff00cc 0%, #3333ff 25%, #00ccff 50%, #33ff99 75%, #ffcc00 100%)",
+        "rarity": "mythic"
+      },
+      "pattern": {
+        "id": "balloon_pattern_2",
+        "name": "Волны",
+        "symbol": "〰",
+        "class": "pattern-waves"
+      },
+      "activated_at": "2026-04-02T15:16:22.370333",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "mythic",
+        "pattern": "common"
+      }
+    },
+    {
+      "id": 158,
+      "owner": "artem",
+      "gift_id": "1775132092.542663",
+      "model": {
+        "id": "crown",
+        "name": "Корона",
+        "value": 500,
+        "rarity": "legendary",
+        "icon": "👑"
+      },
+      "background": {
+        "id": "bg_2",
+        "name": "Океан",
+        "color": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)"
+      },
+      "pattern": {
+        "id": "pattern_3",
+        "name": "Птица",
+        "symbol": "🕊",
+        "class": "pattern-bird"
+      },
+      "activated_at": "2026-04-02T15:18:10.472930",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "rare",
+        "pattern": "legendary"
+      }
+    },
+    {
+      "id": 159,
+      "owner": "artem",
+      "gift_id": "1775132094.142774",
+      "model": {
+        "id": "crown",
+        "name": "Корона",
+        "value": 500,
+        "rarity": "legendary",
+        "icon": "👑"
+      },
+      "background": {
+        "id": "bg_5",
+        "name": "Огонь",
+        "color": "linear-gradient(135deg, #fa709a 0%, #fee140 100%)"
+      },
+      "pattern": {
+        "id": "pattern_1",
+        "name": "Галочка",
+        "symbol": "✓",
+        "class": "pattern-checkmark"
+      },
+      "activated_at": "2026-04-02T16:08:59.237584",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "common",
+        "pattern": "common"
+      }
+    },
+    {
+      "id": 160,
+      "owner": "artem",
+      "gift_id": "1775132095.653272",
+      "model": {
+        "id": "crown",
+        "name": "Корона",
+        "value": 500,
+        "rarity": "legendary",
+        "icon": "👑"
+      },
+      "background": {
+        "id": "bg_3",
+        "name": "Лес",
+        "color": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)"
+      },
+      "pattern": {
+        "id": "pattern_4",
+        "name": "Кисточка",
+        "symbol": "🎨",
+        "class": "pattern-brush"
+      },
+      "activated_at": "2026-04-02T16:09:09.827763",
+      "rarity_scores": {
+        "model": "legendary",
+        "background": "legendary",
+        "pattern": "common"
+      }
+    },
+    {
+      "id": 161,
+      "owner": "artem",
+      "gift_id": "1775135372.695097",
+      "model": {
+        "id": "planet",
+        "name": "Планета",
+        "value": 2500,
+        "rarity": "ultra-legendary",
+        "icon": "🪐"
+      },
+      "background": {
+        "id": "planet_bg_2",
+        "name": "Огненная буря",
+        "color": "linear-gradient(135deg, #ff416c 0%, #ff4b2b 50%, #ffb347 100%)",
+        "rarity": "rare"
+      },
+      "pattern": {
+        "id": "planet_pattern_1",
+        "name": "Кольца",
+        "symbol": "◌",
+        "class": "pattern-rings"
+      },
+      "activated_at": "2026-04-02T16:09:56.895885",
+      "rarity_scores": {
+        "model": "ultra-legendary",
+        "background": "rare",
+        "pattern": "rare"
+      }
+    },
+    {
+      "id": 162,
+      "owner": "artem",
+      "gift_id": "1775135374.277688",
+      "model": {
+        "id": "planet",
+        "name": "Планета",
+        "value": 2500,
+        "rarity": "ultra-legendary",
+        "icon": "🪐"
+      },
+      "background": {
+        "id": "planet_bg_2",
+        "name": "Огненная буря",
+        "color": "linear-gradient(135deg, #ff416c 0%, #ff4b2b 50%, #ffb347 100%)",
+        "rarity": "rare"
+      },
+      "pattern": {
+        "id": "planet_pattern_3",
+        "name": "Туманность",
+        "symbol": "✦✧",
+        "class": "pattern-nebula"
+      },
+      "activated_at": "2026-04-02T16:10:05.418817",
+      "rarity_scores": {
+        "model": "ultra-legendary",
+        "background": "rare",
+        "pattern": "common"
+      }
+    },
+    {
+      "id": 163,
+      "owner": "artem",
+      "gift_id": "1775135375.786079",
+      "model": {
+        "id": "planet",
+        "name": "Планета",
+        "value": 2500,
+        "rarity": "ultra-legendary",
+        "icon": "🪐"
+      },
+      "background": {
+        "id": "planet_bg_2",
+        "name": "Огненная буря",
+        "color": "linear-gradient(135deg, #ff416c 0%, #ff4b2b 50%, #ffb347 100%)",
+        "rarity": "rare"
+      },
+      "pattern": {
+        "id": "planet_pattern_1",
+        "name": "Кольца",
+        "symbol": "◌",
+        "class": "pattern-rings"
+      },
+      "activated_at": "2026-04-02T16:10:14.215063",
+      "rarity_scores": {
+        "model": "ultra-legendary",
+        "background": "rare",
+        "pattern": "legendary"
+      }
+    },
+    {
+      "id": 164,
+      "owner": "artem",
+      "gift_id": "1775135377.553925",
+      "model": {
+        "id": "planet",
+        "name": "Планета",
+        "value": 2500,
+        "rarity": "ultra-legendary",
+        "icon": "🪐"
+      },
+      "background": {
+        "id": "planet_bg_2",
+        "name": "Огненная буря",
+        "color": "linear-gradient(135deg, #ff416c 0%, #ff4b2b 50%, #ffb347 100%)",
+        "rarity": "rare"
+      },
+      "pattern": {
+        "id": "planet_pattern_1",
+        "name": "Кольца",
+        "symbol": "◌",
+        "class": "pattern-rings"
+      },
+      "activated_at": "2026-04-02T16:10:23.419984",
+      "rarity_scores": {
+        "model": "ultra-legendary",
+        "background": "rare",
+        "pattern": "common"
+      }
+    },
+    {
+      "id": 165,
+      "owner": "artem",
+      "gift_id": "1775135379.453524",
+      "model": {
+        "id": "planet",
+        "name": "Планета",
+        "value": 2500,
+        "rarity": "ultra-legendary",
+        "icon": "🪐"
+      },
+      "background": {
+        "id": "planet_bg_1",
+        "name": "Ледяной океан",
+        "color": "linear-gradient(135deg, #4facfe 0%, #00a8ff 50%, #00d2ff 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "planet_pattern_2",
+        "name": "Орбита",
+        "symbol": "◎",
+        "class": "pattern-orbit"
+      },
+      "activated_at": "2026-04-02T16:10:32.105812",
+      "rarity_scores": {
+        "model": "ultra-legendary",
+        "background": "common",
+        "pattern": "legendary"
+      }
+    },
+    {
+      "id": 166,
+      "owner": "artem",
+      "gift_id": "1775135381.634332",
+      "model": {
+        "id": "planet",
+        "name": "Планета",
+        "value": 2500,
+        "rarity": "ultra-legendary",
+        "icon": "🪐"
+      },
+      "background": {
+        "id": "planet_bg_1",
+        "name": "Ледяной океан",
+        "color": "linear-gradient(135deg, #4facfe 0%, #00a8ff 50%, #00d2ff 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "planet_pattern_2",
+        "name": "Орбита",
+        "symbol": "◎",
+        "class": "pattern-orbit"
+      },
+      "activated_at": "2026-04-02T16:10:40.847790",
+      "rarity_scores": {
+        "model": "ultra-legendary",
+        "background": "common",
+        "pattern": "rare"
+      }
+    },
+    {
+      "id": 167,
+      "owner": "chap1a",
+      "gift_id": "1775135484.315475",
+      "model": {
+        "id": "planet",
+        "name": "Планета",
+        "value": 2500,
+        "rarity": "ultra-legendary",
+        "icon": "🪐"
+      },
+      "background": {
+        "id": "planet_bg_1",
+        "name": "Ледяной океан",
+        "color": "linear-gradient(135deg, #4facfe 0%, #00a8ff 50%, #00d2ff 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "planet_pattern_2",
+        "name": "Орбита",
+        "symbol": "◎",
+        "class": "pattern-orbit"
+      },
+      "activated_at": "2026-04-02T16:11:40.844366",
+      "rarity_scores": {
+        "model": "ultra-legendary",
+        "background": "common",
+        "pattern": "common"
+      },
+      "transfer_history": [
+        {
+          "from": "artem",
+          "to": "chap1a",
+          "date": "2026-04-02T16:12:24.307943"
+        }
+      ]
+    },
+    {
+      "id": 168,
+      "owner": "chap1a",
+      "gift_id": "1775135486.414788",
+      "model": {
+        "id": "planet",
+        "name": "Планета",
+        "value": 2500,
+        "rarity": "ultra-legendary",
+        "icon": "🪐"
+      },
+      "background": {
+        "id": "planet_bg_1",
+        "name": "Ледяной океан",
+        "color": "linear-gradient(135deg, #4facfe 0%, #00a8ff 50%, #00d2ff 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "planet_pattern_2",
+        "name": "Орбита",
+        "symbol": "◎",
+        "class": "pattern-orbit"
+      },
+      "activated_at": "2026-04-02T16:11:49.423282",
+      "rarity_scores": {
+        "model": "ultra-legendary",
+        "background": "common",
+        "pattern": "legendary"
+      },
+      "transfer_history": [
+        {
+          "from": "artem",
+          "to": "chap1a",
+          "date": "2026-04-02T16:12:17.500878"
+        }
+      ]
+    },
+    {
+      "id": 169,
+      "owner": "chap1a",
+      "gift_id": "1775135487.990761",
+      "model": {
+        "id": "planet",
+        "name": "Планета",
+        "value": 2500,
+        "rarity": "ultra-legendary",
+        "icon": "🪐"
+      },
+      "background": {
+        "id": "planet_bg_1",
+        "name": "Ледяной океан",
+        "color": "linear-gradient(135deg, #4facfe 0%, #00a8ff 50%, #00d2ff 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "planet_pattern_1",
+        "name": "Кольца",
+        "symbol": "◌",
+        "class": "pattern-rings"
+      },
+      "activated_at": "2026-04-02T16:11:58.051776",
+      "rarity_scores": {
+        "model": "ultra-legendary",
+        "background": "common",
+        "pattern": "legendary"
+      },
+      "transfer_history": [
+        {
+          "from": "artem",
+          "to": "chap1a",
+          "date": "2026-04-02T16:12:13.462060"
+        }
+      ]
+    },
+    {
+      "id": 170,
+      "owner": "artem",
+      "gift_id": "1775135557.798855",
+      "model": {
+        "id": "planet",
+        "name": "Планета",
+        "value": 2500,
+        "rarity": "ultra-legendary",
+        "icon": "🪐"
+      },
+      "background": {
+        "id": "planet_bg_1",
+        "name": "Ледяной океан",
+        "color": "linear-gradient(135deg, #4facfe 0%, #00a8ff 50%, #00d2ff 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "planet_pattern_3",
+        "name": "Туманность",
+        "symbol": "✦✧",
+        "class": "pattern-nebula"
+      },
+      "activated_at": "2026-04-02T16:13:19.158883",
+      "rarity_scores": {
+        "model": "ultra-legendary",
+        "background": "common",
+        "pattern": "legendary"
+      }
+    },
+    {
+      "id": 171,
+      "owner": "artem",
+      "gift_id": "1775135574.839832",
+      "model": {
+        "id": "planet",
+        "name": "Планета",
+        "value": 2500,
+        "rarity": "ultra-legendary",
+        "icon": "🪐"
+      },
+      "background": {
+        "id": "planet_bg_2",
+        "name": "Огненная буря",
+        "color": "linear-gradient(135deg, #ff416c 0%, #ff4b2b 50%, #ffb347 100%)",
+        "rarity": "rare"
+      },
+      "pattern": {
+        "id": "planet_pattern_1",
+        "name": "Кольца",
+        "symbol": "◌",
+        "class": "pattern-rings"
+      },
+      "activated_at": "2026-04-02T16:13:27.247073",
+      "rarity_scores": {
+        "model": "ultra-legendary",
+        "background": "rare",
+        "pattern": "common"
+      }
+    },
+    {
+      "id": 172,
+      "owner": "artem",
+      "gift_id": "1775135581.692639",
+      "model": {
+        "id": "planet",
+        "name": "Планета",
+        "value": 2500,
+        "rarity": "ultra-legendary",
+        "icon": "🪐"
+      },
+      "background": {
+        "id": "planet_bg_2",
+        "name": "Огненная буря",
+        "color": "linear-gradient(135deg, #ff416c 0%, #ff4b2b 50%, #ffb347 100%)",
+        "rarity": "rare"
+      },
+      "pattern": {
+        "id": "planet_pattern_2",
+        "name": "Орбита",
+        "symbol": "◎",
+        "class": "pattern-orbit"
+      },
+      "activated_at": "2026-04-02T16:13:35.276653",
+      "rarity_scores": {
+        "model": "ultra-legendary",
+        "background": "rare",
+        "pattern": "rare"
+      }
+    },
+    {
+      "id": 173,
+      "owner": "artem",
+      "gift_id": "1775135630.873015",
+      "model": {
+        "id": "planet",
+        "name": "Планета",
+        "value": 2500,
+        "rarity": "ultra-legendary",
+        "icon": "🪐"
+      },
+      "background": {
+        "id": "planet_bg_1",
+        "name": "Ледяной океан",
+        "color": "linear-gradient(135deg, #4facfe 0%, #00a8ff 50%, #00d2ff 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "planet_pattern_1",
+        "name": "Кольца",
+        "symbol": "◌",
+        "class": "pattern-rings"
+      },
+      "activated_at": "2026-04-02T16:14:06.647984",
+      "rarity_scores": {
+        "model": "ultra-legendary",
+        "background": "common",
+        "pattern": "rare"
+      }
+    },
+    {
+      "id": 174,
+      "owner": "artem",
+      "gift_id": "1775135632.354097",
+      "model": {
+        "id": "planet",
+        "name": "Планета",
+        "value": 2500,
+        "rarity": "ultra-legendary",
+        "icon": "🪐"
+      },
+      "background": {
+        "id": "planet_bg_1",
+        "name": "Ледяной океан",
+        "color": "linear-gradient(135deg, #4facfe 0%, #00a8ff 50%, #00d2ff 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "planet_pattern_2",
+        "name": "Орбита",
+        "symbol": "◎",
+        "class": "pattern-orbit"
+      },
+      "activated_at": "2026-04-02T16:14:15.834826",
+      "rarity_scores": {
+        "model": "ultra-legendary",
+        "background": "common",
+        "pattern": "legendary"
+      }
+    },
+    {
+      "id": 175,
+      "owner": "artem",
+      "gift_id": "1775135633.736647",
+      "model": {
+        "id": "planet",
+        "name": "Планета",
+        "value": 2500,
+        "rarity": "ultra-legendary",
+        "icon": "🪐"
+      },
+      "background": {
+        "id": "planet_bg_1",
+        "name": "Ледяной океан",
+        "color": "linear-gradient(135deg, #4facfe 0%, #00a8ff 50%, #00d2ff 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "planet_pattern_3",
+        "name": "Туманность",
+        "symbol": "✦✧",
+        "class": "pattern-nebula"
+      },
+      "activated_at": "2026-04-02T16:14:25.175472",
+      "rarity_scores": {
+        "model": "ultra-legendary",
+        "background": "common",
+        "pattern": "common"
+      }
+    },
+    {
+      "id": 176,
+      "owner": "kaktak",
+      "gift_id": "1775138886.047563",
+      "model": {
+        "id": "planet",
+        "name": "Планета",
+        "value": 2500,
+        "rarity": "ultra-legendary",
+        "icon": "🪐"
+      },
+      "background": {
+        "id": "planet_bg_1",
+        "name": "Ледяной океан",
+        "color": "linear-gradient(135deg, #4facfe 0%, #00a8ff 50%, #00d2ff 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "planet_pattern_2",
+        "name": "Орбита",
+        "symbol": "◎",
+        "class": "pattern-orbit"
+      },
+      "activated_at": "2026-04-02T17:08:27.753174",
+      "rarity_scores": {
+        "model": "ultra-legendary",
+        "background": "common",
+        "pattern": "common"
+      }
+    },
+    {
+      "id": 177,
+      "owner": "kaktak",
+      "gift_id": "1775138888.701383",
+      "model": {
+        "id": "planet",
+        "name": "Планета",
+        "value": 2500,
+        "rarity": "ultra-legendary",
+        "icon": "🪐"
+      },
+      "background": {
+        "id": "planet_bg_1",
+        "name": "Ледяной океан",
+        "color": "linear-gradient(135deg, #4facfe 0%, #00a8ff 50%, #00d2ff 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "planet_pattern_1",
+        "name": "Кольца",
+        "symbol": "◌",
+        "class": "pattern-rings"
+      },
+      "activated_at": "2026-04-02T17:08:37.786447",
+      "rarity_scores": {
+        "model": "ultra-legendary",
+        "background": "common",
+        "pattern": "rare"
+      }
+    },
+    {
+      "id": 178,
+      "owner": "artem",
+      "gift_id": "1775139122.185083",
+      "model": {
+        "id": "planet",
+        "name": "Планета",
+        "value": 2500,
+        "rarity": "ultra-legendary",
+        "icon": "🪐"
+      },
+      "background": {
+        "id": "planet_bg_2",
+        "name": "Огненная буря",
+        "color": "linear-gradient(135deg, #ff416c 0%, #ff4b2b 50%, #ffb347 100%)",
+        "rarity": "rare"
+      },
+      "pattern": {
+        "id": "planet_pattern_3",
+        "name": "Туманность",
+        "symbol": "✦✧",
+        "class": "pattern-nebula"
+      },
+      "activated_at": "2026-04-02T17:12:16.622346",
+      "rarity_scores": {
+        "model": "ultra-legendary",
+        "background": "rare",
+        "pattern": "common"
+      }
+    },
+    {
+      "id": 179,
+      "owner": "artem",
+      "gift_id": "1775139123.608967",
+      "model": {
+        "id": "planet",
+        "name": "Планета",
+        "value": 2500,
+        "rarity": "ultra-legendary",
+        "icon": "🪐"
+      },
+      "background": {
+        "id": "planet_bg_2",
+        "name": "Огненная буря",
+        "color": "linear-gradient(135deg, #ff416c 0%, #ff4b2b 50%, #ffb347 100%)",
+        "rarity": "rare"
+      },
+      "pattern": {
+        "id": "planet_pattern_2",
+        "name": "Орбита",
+        "symbol": "◎",
+        "class": "pattern-orbit"
+      },
+      "activated_at": "2026-04-02T17:12:26.386736",
+      "rarity_scores": {
+        "model": "ultra-legendary",
+        "background": "rare",
+        "pattern": "common"
+      }
+    },
+    {
+      "id": 180,
+      "owner": "artem",
+      "gift_id": "1775139125.178628",
+      "model": {
+        "id": "planet",
+        "name": "Планета",
+        "value": 2500,
+        "rarity": "ultra-legendary",
+        "icon": "🪐"
+      },
+      "background": {
+        "id": "planet_bg_1",
+        "name": "Ледяной океан",
+        "color": "linear-gradient(135deg, #4facfe 0%, #00a8ff 50%, #00d2ff 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "planet_pattern_3",
+        "name": "Туманность",
+        "symbol": "✦✧",
+        "class": "pattern-nebula"
+      },
+      "activated_at": "2026-04-02T17:12:35.677456",
+      "rarity_scores": {
+        "model": "ultra-legendary",
+        "background": "common",
+        "pattern": "common"
+      }
+    },
+    {
+      "id": 181,
+      "owner": "artem",
+      "gift_id": "1775139168.533388",
+      "model": {
+        "id": "planet",
+        "name": "Планета",
+        "value": 2500,
+        "rarity": "ultra-legendary",
+        "icon": "🪐"
+      },
+      "background": {
+        "id": "planet_bg_2",
+        "name": "Огненная буря",
+        "color": "linear-gradient(135deg, #ff416c 0%, #ff4b2b 50%, #ffb347 100%)",
+        "rarity": "rare"
+      },
+      "pattern": {
+        "id": "planet_pattern_3",
+        "name": "Туманность",
+        "symbol": "✦✧",
+        "class": "pattern-nebula"
+      },
+      "activated_at": "2026-04-02T17:13:06.528490",
+      "rarity_scores": {
+        "model": "ultra-legendary",
+        "background": "rare",
+        "pattern": "common"
+      }
+    },
+    {
+      "id": 182,
+      "owner": "artem",
+      "gift_id": "1775139169.990316",
+      "model": {
+        "id": "planet",
+        "name": "Планета",
+        "value": 2500,
+        "rarity": "ultra-legendary",
+        "icon": "🪐"
+      },
+      "background": {
+        "id": "planet_bg_2",
+        "name": "Огненная буря",
+        "color": "linear-gradient(135deg, #ff416c 0%, #ff4b2b 50%, #ffb347 100%)",
+        "rarity": "rare"
+      },
+      "pattern": {
+        "id": "planet_pattern_1",
+        "name": "Кольца",
+        "symbol": "◌",
+        "class": "pattern-rings"
+      },
+      "activated_at": "2026-04-02T17:13:15.273858",
+      "rarity_scores": {
+        "model": "ultra-legendary",
+        "background": "rare",
+        "pattern": "rare"
+      }
+    },
+    {
+      "id": 183,
+      "owner": "artem",
+      "gift_id": "1775139171.314052",
+      "model": {
+        "id": "planet",
+        "name": "Планета",
+        "value": 2500,
+        "rarity": "ultra-legendary",
+        "icon": "🪐"
+      },
+      "background": {
+        "id": "planet_bg_1",
+        "name": "Ледяной океан",
+        "color": "linear-gradient(135deg, #4facfe 0%, #00a8ff 50%, #00d2ff 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "planet_pattern_1",
+        "name": "Кольца",
+        "symbol": "◌",
+        "class": "pattern-rings"
+      },
+      "activated_at": "2026-04-02T17:13:29.330207",
+      "rarity_scores": {
+        "model": "ultra-legendary",
+        "background": "common",
+        "pattern": "rare"
+      }
+    },
+    {
+      "id": 184,
+      "owner": "artem",
+      "gift_id": "1775139214.519112",
+      "model": {
+        "id": "planet",
+        "name": "Планета",
+        "value": 2500,
+        "rarity": "ultra-legendary",
+        "icon": "🪐"
+      },
+      "background": {
+        "id": "planet_bg_3",
+        "name": "Космическая аура",
+        "color": "linear-gradient(135deg, #667eea 0%, #b721ff 25%, #764ba2 50%, #4facfe 75%, #00f2fe 100%)",
+        "rarity": "ultra-rare",
+        "animated": true
+      },
+      "pattern": {
+        "id": "planet_pattern_2",
+        "name": "Орбита",
+        "symbol": "◎",
+        "class": "pattern-orbit"
+      },
+      "activated_at": "2026-04-02T17:14:32.283522",
+      "rarity_scores": {
+        "model": "ultra-legendary",
+        "background": "ultra-rare",
+        "pattern": "legendary"
+      }
+    },
+    {
+      "id": 185,
+      "owner": "artem",
+      "gift_id": "1775139224.395565",
+      "model": {
+        "id": "planet",
+        "name": "Планета",
+        "value": 2500,
+        "rarity": "ultra-legendary",
+        "icon": "🪐"
+      },
+      "background": {
+        "id": "planet_bg_2",
+        "name": "Огненная буря",
+        "color": "linear-gradient(135deg, #ff416c 0%, #ff4b2b 50%, #ffb347 100%)",
+        "rarity": "rare"
+      },
+      "pattern": {
+        "id": "planet_pattern_2",
+        "name": "Орбита",
+        "symbol": "◎",
+        "class": "pattern-orbit"
+      },
+      "activated_at": "2026-04-02T17:15:47.714590",
+      "rarity_scores": {
+        "model": "ultra-legendary",
+        "background": "rare",
+        "pattern": "rare"
+      }
+    },
+    {
+      "id": 186,
+      "owner": "artem",
+      "gift_id": "1775139215.87129",
+      "model": {
+        "id": "planet",
+        "name": "Планета",
+        "value": 2500,
+        "rarity": "ultra-legendary",
+        "icon": "🪐"
+      },
+      "background": {
+        "id": "planet_bg_1",
+        "name": "Ледяной океан",
+        "color": "linear-gradient(135deg, #4facfe 0%, #00a8ff 50%, #00d2ff 100%)",
+        "rarity": "common"
+      },
+      "pattern": {
+        "id": "planet_pattern_1",
+        "name": "Кольца",
+        "symbol": "◌",
+        "class": "pattern-rings"
+      },
+      "activated_at": "2026-04-02T17:15:57.710493",
+      "rarity_scores": {
+        "model": "ultra-legendary",
+        "background": "common",
+        "pattern": "legendary"
+      }
+    }
+  ],
+  "next_id": 187
+}
